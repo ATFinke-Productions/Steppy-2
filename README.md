@@ -37,7 +37,7 @@ Each bar in a STPYGraphView. Has another UIView inside of it that appears to gro
 
 ##### STPYGCHelper
 
-Handles Game Center authentication, leaderboard data downloading, and sumbitting step counts.
+Handles Game Center authentication, leaderboard data downloading, and submitting step counts.
 
 ##### STPYHKManager
 
@@ -81,5 +81,10 @@ The view controller for the graph extension in Notification Center.
 
 The view controller for the step count extension in Notification Center.
 
+## Common Questions
 
+### Hey Andrew, why is it free?
+At this point in my life, seeing a high download count is more rewarding than a few extra dollars.
 
+### Ok, fine. So why not have ads?
+I spent a lot of time crafting a simple, elegant user interface. I'm not going to ruin it by sticking an ad in the middle of it.
