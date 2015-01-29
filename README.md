@@ -5,14 +5,7 @@
 
 An open-source remake of my step tracking app, Steppy. Now written entirely in Swift and integrated with the Health app in iOS 8.
 
-## Table Of Contents
-
-[Compatibility](##Compatibility)
-[Class Overview](##Class-Overview)
-[Common Questions](##Common-Questions)
-[Future](##Future)
-
-## Compatibility
+##Compatibility
 
 Built with Xcode 6. Requires iOS 8.0+ for HealthKit.
 
@@ -100,6 +93,6 @@ At this point in my life, seeing a high download count is more rewarding than a 
 ### Ok, fine. So why not have ads?
 I spent a lot of time crafting a simple, elegant user interface. I'm not going to ruin it by sticking an ad in the middle of it.
 
-## Future
+##Future
 
 Potential integration with Apple Watch. Most likely not due to the strength of Apple's built in fitness apps.
