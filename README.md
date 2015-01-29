@@ -1,9 +1,15 @@
 
-# The source code will be pushed once the app is live, hopefully sometime in early February
-
-# Steppy-2
+##### The source code will be pushed once the app is live, hopefully sometime in early February
 
 An open-source remake of my step tracking app, Steppy. Now written entirely in Swift and integrated with the Health app in iOS 8.
+
+
+##Table Of Contents
+
+1. [Compatibility](https://github.com/ATFinke-Productions/Steppy-2#compatibility)
+2. [Class Overview](https://github.com/ATFinke-Productions/Steppy-2#class-overview)
+3. [Compatibility](https://github.com/ATFinke-Productions/Steppy-2#future)
+4. [Future](https://github.com/ATFinke-Productions/Steppy-2#common-questions)
 
 ##Compatibility
 
