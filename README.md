@@ -5,9 +5,16 @@
 
 An open-source remake of my step tracking app, Steppy. Now written entirely in Swift and integrated with the Health app in iOS 8.
 
+## Table Of Contents
+
+[Compatibility](##Compatibility)
+[Class Overview](##Class-Overview)
+[Common Questions](##Common-Questions)
+[Future](##Future)
+
 ## Compatibility
 
-Built with Xcode 6. Requires iOS 8.0 + for HealthKit.
+Built with Xcode 6. Requires iOS 8.0+ for HealthKit.
 
 ## Class Overview
 
