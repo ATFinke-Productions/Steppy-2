@@ -13,7 +13,7 @@ An open-source remake of my step tracking app, Steppy. Now written entirely in S
 
 ##Compatibility
 
-Built with Xcode 6. Requires iOS 8.0+ for HealthKit.
+Built with Xcode 6.1.1. Requires iOS 8.0+ for HealthKit.
 
 ## Class Overview
 
@@ -96,7 +96,7 @@ The view controller for the step count extension in Notification Center.
 ### Hey Andrew, why is it free?
 At this point in my life, seeing a high download count is more rewarding than a few extra dollars.
 
-### Ok, fine. So why not have ads?
+### But why not have ads?
 I spent a lot of time crafting a simple, elegant user interface. I'm not going to ruin it by sticking an ad in the middle of it.
 
 ##Future
