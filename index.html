@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Steppy-2 by ATFinke-Productions</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Steppy-2</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/ATFinke-Productions/Steppy-2">View the Project on GitHub <small>ATFinke-Productions/Steppy-2</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/ATFinke-Productions/Steppy-2/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/ATFinke-Productions/Steppy-2/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/ATFinke-Productions/Steppy-2">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h5>
+<a id="the-source-code-will-be-pushed-once-the-app-is-live-hopefully-sometime-in-february" class="anchor" href="#the-source-code-will-be-pushed-once-the-app-is-live-hopefully-sometime-in-february" aria-hidden="true"><span class="octicon octicon-link"></span></a>The source code will be pushed once the app is live, hopefully sometime in February</h5>
+
+<p>An open-source remake of my step tracking app, Steppy. Now written entirely in Swift and integrated with the Health app in iOS 8.</p>
+
+<h2>
+<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Table Of Contents</h2>
+
+<ol>
+<li><a href="https://github.com/ATFinke-Productions/Steppy-2#compatibility">Compatibility</a></li>
+<li><a href="https://github.com/ATFinke-Productions/Steppy-2#class-overview">Class Overview</a></li>
+<li><a href="https://github.com/ATFinke-Productions/Steppy-2#common-questions">Common Questions</a></li>
+<li><a href="https://github.com/ATFinke-Productions/Steppy-2#thanks-to">Thanks</a></li>
+</ol>
+
+<h2>
+<a id="compatibility" class="anchor" href="#compatibility" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compatibility</h2>
+
+<p>Built with Xcode 6.1.1. Requires iOS 8.0+ for HealthKit.</p>
+
+<h2>
+<a id="class-overview" class="anchor" href="#class-overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Class Overview</h2>
+
+<h3>
+<a id="general" class="anchor" href="#general" aria-hidden="true"><span class="octicon octicon-link"></span></a>General</h3>
+
+<h5>
+<a id="stpyappdelegate" class="anchor" href="#stpyappdelegate" aria-hidden="true"><span class="octicon octicon-link"></span></a>STPYAppDelegate</h5>
+
+<p>The application delegate. Loads the UIAppearence attributes, starts GameKit authentication in STPYGCHelper, and gets called for background refreshes.</p>
+
+<h5>
+<a id="stpycolor" class="anchor" href="#stpycolor" aria-hidden="true"><span class="octicon octicon-link"></span></a>STPYColor</h5>
+
+<p>Extension of UIColor. Includes the application background colors and also helps in creating colors for smooth transition between other colors.</p>
+
+<h5>
+<a id="stpynavigationbarview" class="anchor" href="#stpynavigationbarview" aria-hidden="true"><span class="octicon octicon-link"></span></a>STPYNavigationBarView</h5>
+
+<p>The view that appears to extend the navigation bar. Used in STPYLeaderboardViewController</p>
+
+<h5>
+<a id="stpysummaryview" class="anchor" href="#stpysummaryview" aria-hidden="true"><span class="octicon octicon-link"></span></a>STPYSummaryView</h5>
+
+<p>The view that appears in the top scroll view in STPYGraphViewController.</p>
+
+<h5>
+<a id="stpygraphview" class="anchor" href="#stpygraphview" aria-hidden="true"><span class="octicon octicon-link"></span></a>STPYGraphView</h5>
+
+<p>The view that contains and manages a single graph.</p>
+
+<h5>
+<a id="stpygraphbar" class="anchor" href="#stpygraphbar" aria-hidden="true"><span class="octicon octicon-link"></span></a>STPYGraphBar</h5>
+
+<p>Each bar in a STPYGraphView. Has another UIView inside of it that appears to grow/shrink in the eyes of the user, but actually stays constant to easily detect touches.</p>
+
+<h3>
+<a id="helpers" class="anchor" href="#helpers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Helpers</h3>
+
+<h5>
+<a id="stpygchelper" class="anchor" href="#stpygchelper" aria-hidden="true"><span class="octicon octicon-link"></span></a>STPYGCHelper</h5>
+
+<p>Handles Game Center authentication, leaderboard data downloading, and submitting step counts.</p>
+
+<h5>
+<a id="stpyhkmanager" class="anchor" href="#stpyhkmanager" aria-hidden="true"><span class="octicon octicon-link"></span></a>STPYHKManager</h5>
+
+<p>The link between HealthKit and the app. Queries data and saves it for display.</p>
+
+<h5>
+<a id="stpydatahelper" class="anchor" href="#stpydatahelper" aria-hidden="true"><span class="octicon octicon-link"></span></a>STPYDataHelper</h5>
+
+<p>Link to NSUserDefaults for classes to easily save and load data.</p>
+
+<h5>
+<a id="stpydatehelper" class="anchor" href="#stpydatehelper" aria-hidden="true"><span class="octicon octicon-link"></span></a>STPYDateHelper</h5>
+
+<p>Contains NSDate extensions that help with storing data. Also gets localized day abbreviations for the graphs</p>
+
+<h3>
+<a id="view-controllers" class="anchor" href="#view-controllers" aria-hidden="true"><span class="octicon octicon-link"></span></a>View Controllers</h3>
+
+<h5>
+<a id="stpygraphviewcontroller" class="anchor" href="#stpygraphviewcontroller" aria-hidden="true"><span class="octicon octicon-link"></span></a>STPYGraphViewController</h5>
+
+<p>The main view controller of the app. Displays the step data in the form of interactive graphs in a scroll view.</p>
+
+<h5>
+<a id="stpymodalviewcontroller" class="anchor" href="#stpymodalviewcontroller" aria-hidden="true"><span class="octicon octicon-link"></span></a>STPYModalViewController</h5>
+
+<p>The view controller all other modal view controllers in the app inherit from. Allows for consitent button style setting and easily adding menu/dismiss/done button to controllers. Also helps in making sure background color is the same as the STPYGraphViewController.</p>
+
+<h5>
+<a id="stpyaboutviewcontroller" class="anchor" href="#stpyaboutviewcontroller" aria-hidden="true"><span class="octicon octicon-link"></span></a>STPYAboutViewController</h5>
+
+<p>The view controller that displays basic infomation about the app (name/version/build). Also allows the user to toggle Game Center features.</p>
+
+<h5>
+<a id="stpyleaderboardviewcontroller" class="anchor" href="#stpyleaderboardviewcontroller" aria-hidden="true"><span class="octicon octicon-link"></span></a>STPYLeaderboardViewController</h5>
+
+<p>The view controller that displays the step count leaderboards. Only enabled if the user is signed into Game Center. Uses a UISegmenetedControl to allow the user to select leaderboard time span.</p>
+
+<h5>
+<a id="stpysetupviewcontroller" class="anchor" href="#stpysetupviewcontroller" aria-hidden="true"><span class="octicon octicon-link"></span></a>STPYSetupViewController</h5>
+
+<p>The view controller that displays on first launch of the app. Allows the user to sign into Game Center and authenticate app with HealthKit.</p>
+
+<h5>
+<a id="stpygraphextensionviewcontroller" class="anchor" href="#stpygraphextensionviewcontroller" aria-hidden="true"><span class="octicon octicon-link"></span></a>STPYGraphExtensionViewController</h5>
+
+<p>The view controller for the graph extension in Notification Center.</p>
+
+<h5>
+<a id="stpysteptableviewcontroller" class="anchor" href="#stpysteptableviewcontroller" aria-hidden="true"><span class="octicon octicon-link"></span></a>STPYStepTableViewController</h5>
+
+<p>The view controller for the step count extension in Notification Center.</p>
+
+<h2>
+<a id="common-questions" class="anchor" href="#common-questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Common Questions</h2>
+
+<h3>
+<a id="hey-andrew-why-is-it-free" class="anchor" href="#hey-andrew-why-is-it-free" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hey Andrew, why is it free?</h3>
+
+<p>At this point in my life, seeing a high download count is more rewarding than a few extra dollars.</p>
+
+<h3>
+<a id="but-why-not-have-ads" class="anchor" href="#but-why-not-have-ads" aria-hidden="true"><span class="octicon octicon-link"></span></a>But why not have ads?</h3>
+
+<p>I spent a lot of time crafting a simple, elegant user interface. I'm not going to ruin it by sticking an ad in the middle of it.</p>
+
+<h2>
+<a id="thanks-to" class="anchor" href="#thanks-to" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thanks To</h2>
+
+<h3>
+<a id="my-beta-testers" class="anchor" href="#my-beta-testers" aria-hidden="true"><span class="octicon octicon-link"></span></a>My Beta Testers</h3>
+
+<p>Thanks to William Preston, Sam Lim, Stephen Stearns, and Varun Gupta for being awesome beta testers. Especially Sam. Sam was pretty awesome. If you want to beta test any of my <a href="http://i.imgur.com/JBVwMIP.png">future projects</a> send me an email from my <a href="atfinkeproductions.com">website</a>.</p>
+
+<h3>
+<a id="apple" class="anchor" href="#apple" aria-hidden="true"><span class="octicon octicon-link"></span></a>Apple</h3>
+
+<p>Thanks to Apple for allowing me attend WWDC 2012-14 on <a href="https://developer.apple.com/wwdc/students/">student scholarship</a>. It's my Disneyland.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/ATFinke-Productions">ATFinke-Productions</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
