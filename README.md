@@ -1,5 +1,5 @@
 
-##### The source code will be pushed once the app is live, hopefully sometime in early February
+##### The source code will be pushed once the app is live, hopefully sometime in February
 
 An open-source remake of my step tracking app, Steppy. Now written entirely in Swift and integrated with the Health app in iOS 8.
 
@@ -8,8 +8,9 @@ An open-source remake of my step tracking app, Steppy. Now written entirely in S
 
 1. [Compatibility](https://github.com/ATFinke-Productions/Steppy-2#compatibility)
 2. [Class Overview](https://github.com/ATFinke-Productions/Steppy-2#class-overview)
-3. [Compatibility](https://github.com/ATFinke-Productions/Steppy-2#future)
-4. [Future](https://github.com/ATFinke-Productions/Steppy-2#common-questions)
+3. [Future](https://github.com/ATFinke-Productions/Steppy-2#future)
+4. [Common Questions](https://github.com/ATFinke-Productions/Steppy-2#common-questions)
+5. [Thanks](https://github.com/ATFinke-Productions/Steppy-2#thanks)
 
 ##Compatibility
 
@@ -102,3 +103,12 @@ I spent a lot of time crafting a simple, elegant user interface. I'm not going t
 ##Future
 
 Potential integration with Apple Watch. Most likely not due to the strength of Apple's built in fitness apps.
+
+## Thanks
+
+### Beta Testers
+Thanks to William Preston, Sam Lim, Stephen Stearns, and Varun Gupta for being awesome beta testers. Especially Sam. Sam was pretty awesome. If you want to beta test any of my future projects send me an email from my [website](atfinkeproductions.com).
+
+### Apple
+Thanks to Apple for allowing me attend WWDC 2012-14 on student scholarship. It's my Disneyland.
+
