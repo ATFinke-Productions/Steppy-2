@@ -58,7 +58,11 @@ Link to NSUserDefaults for classes to easily save and load data.
 
 ##### STPYDateHelper
 
-Contains NSDate extensions that help with storing data. Also gets localized day abbreviations for the graphs
+Contains NSDate extensions that help with storing data. Also gets localized day abbreviations for the graphs.
+
+##### STPYFormatter
+
+Class to reuse various NSFormatters used throughout the app.
 
 ### View Controllers
 
