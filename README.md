@@ -9,7 +9,7 @@ An open-source remake of my step tracking app, Steppy. Now written entirely in S
 1. [Compatibility](https://github.com/ATFinke-Productions/Steppy-2#compatibility)
 2. [Class Overview](https://github.com/ATFinke-Productions/Steppy-2#class-overview)
 3. [Common Questions](https://github.com/ATFinke-Productions/Steppy-2#common-questions)
-4. [Thanks](https://github.com/ATFinke-Productions/Steppy-2#thanks)
+4. [Thanks](https://github.com/ATFinke-Productions/Steppy-2#thanks-to)
 
 ##Compatibility
 
