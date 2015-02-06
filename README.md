@@ -105,5 +105,5 @@ I spent a lot of time crafting a simple, elegant user interface. I'm not going t
 Thanks to William Preston, Sam Lim, Stephen Stearns, and Varun Gupta for being awesome beta testers. Especially Sam. Sam was pretty awesome. If you want to beta test any of my future projects send me an email from my [website](atfinkeproductions.com).
 
 ### Apple
-Thanks to Apple for allowing me attend WWDC 2012-14 on student scholarship. It's my Disneyland.
+Thanks to Apple for allowing me attend WWDC 2012-14 on [student scholarship](https://developer.apple.com/wwdc/students/). It's my Disneyland.
 
