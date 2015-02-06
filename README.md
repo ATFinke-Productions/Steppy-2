@@ -9,8 +9,7 @@ An open-source remake of my step tracking app, Steppy. Now written entirely in S
 1. [Compatibility](https://github.com/ATFinke-Productions/Steppy-2#compatibility)
 2. [Class Overview](https://github.com/ATFinke-Productions/Steppy-2#class-overview)
 3. [Common Questions](https://github.com/ATFinke-Productions/Steppy-2#common-questions)
-4. [Future](https://github.com/ATFinke-Productions/Steppy-2#future)
-5. [Thanks](https://github.com/ATFinke-Productions/Steppy-2#thanks)
+4. [Thanks](https://github.com/ATFinke-Productions/Steppy-2#thanks)
 
 ##Compatibility
 
@@ -100,13 +99,9 @@ At this point in my life, seeing a high download count is more rewarding than a 
 ### But why not have ads?
 I spent a lot of time crafting a simple, elegant user interface. I'm not going to ruin it by sticking an ad in the middle of it.
 
-##Future
+## Thanks To
 
-Potential integration with Apple Watch. Most likely not due to the strength of Apple's built in fitness apps.
-
-## Thanks
-
-### Beta Testers
+### My Beta Testers
 Thanks to William Preston, Sam Lim, Stephen Stearns, and Varun Gupta for being awesome beta testers. Especially Sam. Sam was pretty awesome. If you want to beta test any of my future projects send me an email from my [website](atfinkeproductions.com).
 
 ### Apple
