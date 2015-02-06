@@ -62,7 +62,7 @@ Contains NSDate extensions that help with storing data. Also gets localized day 
 
 ##### STPYFormatter
 
-Class to reuse various NSFormatters used throughout the app.
+Class to reuse various NSFormatters that are used throughout the app.
 
 ### View Controllers
 
