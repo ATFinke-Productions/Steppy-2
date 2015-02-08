@@ -64,6 +64,10 @@ Contains NSDate extensions that help with storing data. Also gets localized day 
 
 Class to reuse various NSFormatters that are used throughout the app.
 
+##### STPYCMHelper
+
+Gets the lastest step data from the Core Motion framework instead of HealthKit.
+
 ### View Controllers
 
 ##### STPYGraphViewController
