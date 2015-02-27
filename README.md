@@ -1,7 +1,5 @@
 
-##### The source code will be pushed once the app is live, hopefully sometime in February
-
-An open-source remake of my step tracking app, Steppy. Now written entirely in Swift and integrated with the Health app in iOS 8.
+An open-source remake of my step tracking app, Steppy. Now written entirely in Swift and integrated with the Health app in iOS 8. [Download it for free!](https://itunes.apple.com/us/app/steppy-2/id957204397?ls=1&mt=8)
 
 ##Table Of Contents
 
