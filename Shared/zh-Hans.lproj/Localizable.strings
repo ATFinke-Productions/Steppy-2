@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  Steppy
+
+  Created by Andrew Finke on 7/10/14.
+  Copyright (c) 2014 ATFinke Productions. All rights reserved.
+*/
+
+"Shared GC Error Title" = "Game Center 不可用";
+"Shared GC Error Message" = "登录 Game Center 时发生错误。请尝试使用 Game Center App 直接登录。";
+"Shared GC Error Button" = "好的，谢谢。";
+
+"Shared Steps Title" = "%@ 步";
+
+"Setup Device Title" = "欢迎使用 Steppy！";
+"Setup Device Continue Button" = "继续";
+"Setup GC Title" = "启用 Game Center";
+"Setup GC Main Button" = "登录";
+
+"Leaderboards Title" = "排行榜";
+"Leaderboards Today Text" = "今天";
+"Leaderboards Week Text" = "本周";
+"Leaderboards Total Text" = "总共";
+
+"Week Total Steps Title" = "总步数";
+
+//New For Swift Version
+
+"Loading" = "正在加载";
+
+"Game Center Disclaimer" = "登录 Game Center 来共享你的步数并与全球各路人士一较高低";
+"Game Center Disable" = "停用 Game Center";
+"Game Center Logged In" = "已登录";
+
+"HealthKit Disclaimer" = "Steppy 需要访问健康 app 中步数和距离数据的权限才可以为您提供最好的体验";
+"Grant Access Button" = "授予权限";
+
+"No Health App Title" = "日期不可用";
+"No Health App Message" = "Steppy 需要使用健康 app 的数据才可以提供最好的体验";
+"No Data Title" = "没有数据";
+"No Data Message" = "Steppy 需要使用健康 app 的数据才可以提供最好的体验。请前往健康 app 确认已有数据记录并确认 Steppy 具有阅读权限。";
+
+"About Title" = "关于";
+"Website Button" = "访问网站";
+"Source Code Button" = "查看源代码";
+"Support Button" = "电邮技术支持";

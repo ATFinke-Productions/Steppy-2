@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  Steppy
+
+  Created by Andrew Finke on 7/10/14.
+  Copyright (c) 2014 ATFinke Productions. All rights reserved.
+*/
+
+"Shared GC Error Title" = "Game Center indisponible";
+"Shared GC Error Message" = "Il semble qu’une erreur soit survenue lors de la tentative de connexion au Game Center. Essayez de vous connecter avec l’appli Game Center.";
+"Shared GC Error Button" = "Ok, merci.";
+
+"Shared Steps Title" = "%@ pas";
+
+"Setup Device Title" = "Bienvenur sur Steppy!";
+"Setup Device Continue Button" = "Continuer";
+"Setup GC Title" = "Activer le Game Center";
+"Setup GC Main Button" = "Connexion";
+
+"Leaderboards Title" = "Tableau des scores";
+"Leaderboards Today Text" = "Aujourd’hui";
+"Leaderboards Week Text" = "Cette semaine";
+"Leaderboards Total Text" = "Total";
+
+"Week Total Steps Title" = "Total de pas";
+
+//New For Swift Version
+
+"Loading" = "Chargement";
+
+"Game Center Disclaimer" = "Connectez-vous à Game Center pour partager votre compte de pas et rivaliser avec d'autres personnes du monde entier";
+"Game Center Disable" = "Désactiver Game Center";
+"Game Center Logged In" = "Connecté";
+
+"HealthKit Disclaimer" = "Steppy a besoin d'accéder à vos données de pas et de distance de l'appli Health pour offrir la meilleure expérience";
+"Grant Access Button" = "Autoriser l'accès";
+
+"No Health App Title" = "Données non disponibles";
+"No Health App Message" = "Les données de l'appli Health sont nécessaires pour que Steppy offre la meilleure expérience";
+"No Data Title" = "Pas de données";
+"No Data Message" = "Steppy a besoin des données de pas et de distance de l'appli Health pour offrir la meilleure expérience. Veuillez aller dans l'appli Health et assurez-vous qu'il y a des données et que Steppy y a accès en lecture.";
+
+"About Title" = "A propos de";
+"Website Button" = "Visiter le site web";
+"Source Code Button" = "Voir le code source";
+"Support Button" = "Assistance email";

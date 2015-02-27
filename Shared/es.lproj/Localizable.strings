@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  Steppy
+
+  Created by Andrew Finke on 7/10/14.
+  Copyright (c) 2014 ATFinke Productions. All rights reserved.
+*/
+
+"Shared GC Error Title" = "Game Center no disponible";
+"Shared GC Error Message" = "Parece que se ha producido un error al iniciar sesión en el Game Center. Intenta iniciar sesión a través de la app del Game Center.";
+"Shared GC Error Button" = "Bien, gracias.";
+
+"Shared Steps Title" = "%@ pasos";
+
+"Setup Device Title" = "¡Bienvenido/a a Steppy!";
+"Setup Device Continue Button" = "Continuar";
+"Setup GC Title" = "Activar Game Center";
+"Setup GC Main Button" = "Entrar";
+
+"Leaderboards Title" = "Clasificaciones";
+"Leaderboards Today Text" = "Hoy";
+"Leaderboards Week Text" = "Esta semana";
+"Leaderboards Total Text" = "Total";
+
+"Week Total Steps Title" = "Pasos totales";
+
+//New For Swift Version
+
+"Loading" = "Cargando";
+
+"Game Center Disclaimer" = "Inicia sesión en el Game Center para compartir tu contador de pasos y competir con otros usuarios de todo el mundo";
+"Game Center Disable" = "Desactivar Game Center";
+"Game Center Logged In" = "Sesión iniciada";
+
+"HealthKit Disclaimer" = "Steppy necesita acceder a los datos de pasos y distancia de la aplicación Health para ofrecerte una experiencia mejor";
+"Grant Access Button" = "Permitir acceso";
+
+"No Health App Title" = "Datos no disponibles";
+"No Health App Message" = "Steppy necesita los datos de la aplicación Health para ofrecerte una experiencia mejor";
+"No Data Title" = "Sin datos";
+"No Data Message" = "Steppy necesita los datos de pasos y distancia de la aplicación Health para ofrecerte una experiencia mejor. Accede a la aplicación Health y comprueba que dispone de datos y que Steppy tiene permisos de lectura.";
+
+"About Title" = "Acerca de";
+"Website Button" = "Visitar sitio web";
+"Source Code Button" = "Ver código fuente";
+"Support Button" = "Enviar correo a soporte";

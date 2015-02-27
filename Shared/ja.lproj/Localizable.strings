@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  Steppy
+
+  Created by Andrew Finke on 7/10/14.
+  Copyright (c) 2014 ATFinke Productions. All rights reserved.
+*/
+
+"Shared GC Error Title" = "Game Center にアクセスできません";
+"Shared GC Error Message" = "Game Center へのログイン中にエラーが発生したようです。Game Center アプリを通じてログインしてみてください。";
+"Shared GC Error Button" = "分かりました。";
+
+"Shared Steps Title" = "%@ 歩";
+
+"Setup Device Title" = "Steppyへようこそ！";
+"Setup Device Continue Button" = "続行";
+"Setup GC Title" = "Game Centerを有効にする";
+"Setup GC Main Button" = "ログイン";
+
+"Leaderboards Title" = "リーダーボード";
+"Leaderboards Today Text" = "今日";
+"Leaderboards Week Text" = "今週";
+"Leaderboards Total Text" = "総計";
+
+"Week Total Steps Title" = "合計歩数";
+
+//New For Swift Version
+
+"Loading" = "読み込み中";
+
+"Game Center Disclaimer" = "歩数をシェアして世界中の人たちと歩数を競うには、Game Center にサインインしてください";
+"Game Center Disable" = "Game Center を無効にする";
+"Game Center Logged In" = "ログインされています";
+
+"HealthKit Disclaimer" = "最高の使用体験をお届けするため、Steppy はヘルスケアアプリの歩数と歩行距離データへのアクセスを必要としています";
+"Grant Access Button" = "アクセスを許可";
+
+"No Health App Title" = "使用可能なデータなし";
+"No Health App Message" = "Steppy が最高の使用体験をお届けできるようにするには、ヘルスケアアプリの健康データが必要です";
+"No Data Title" = "データなし";
+"No Data Message" = "最高の使用体験をお届けするため、Steppy はヘルスケアアプリの歩数と歩行距離データを必要としています。ヘルスケアアプリを開いて健康データが存在し、それに Steppy がアクセスできるようにしてください。";
+
+"About Title" = "Steppy について";
+"Website Button" = "ウェブサイトを開く";
+"Source Code Button" = "ソースコードを閲覧";
+"Support Button" = "サポートにメール送信";

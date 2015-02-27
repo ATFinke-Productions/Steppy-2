@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  Steppy
+
+  Created by Andrew Finke on 7/10/14.
+  Copyright (c) 2014 ATFinke Productions. All rights reserved.
+*/
+
+"Shared GC Error Title" = "Game Center недоступен";
+"Shared GC Error Message" = "Кажется, произошла ошибка при входе в Game Center. Попробуйте войти через приложение Game Center.";
+"Shared GC Error Button" = "Понятно.";
+
+"Shared Steps Title" = "Шагов: %@";
+
+"Setup Device Title" = "Добро пожаловать в Steppy!";
+"Setup Device Continue Button" = "Продолжить";
+"Setup GC Title" = "Включить Game Center";
+"Setup GC Main Button" = "Вход";
+
+"Leaderboards Title" = "Таблицы лидеров";
+"Leaderboards Today Text" = "Сегодня";
+"Leaderboards Week Text" = "Эта неделя";
+"Leaderboards Total Text" = "Общие";
+
+"Week Total Steps Title" = "Всего шагов";
+
+//New For Swift Version
+
+"Loading" = "Загрузка";
+
+"Game Center Disclaimer" = "Войдите в Game Center, чтобы поделиться количеством шагов и участвовать в соревновании с пользователями по всему миру";
+"Game Center Disable" = "Отключить Game Center";
+"Game Center Logged In" = "Вы вошли";
+
+"HealthKit Disclaimer" = "Для эффективной работы Steppy нужен доступ к данным о шагах и расстоянии в приложении «Здоровье»";
+"Grant Access Button" = "Дать доступ";
+
+"No Health App Title" = "Данные недоступны";
+"No Health App Message" = "Доступ к данным о шагах и расстоянии в приложении «Здоровье» необходим для эффективной работы Steppy";
+"No Data Title" = "Нет данных";
+"No Data Message" = "Для эффективной работы Steppy нужен доступ к данным о шагах и расстоянии в приложении «Здоровье». Откройте приложение «Здоровье» и убедитесь, что там записаны данные и у Steppy есть разрешение на их считывание.";
+
+"About Title" = "О программе";
+"Website Button" = "Зайти на сайт";
+"Source Code Button" = "Исходный код";
+"Support Button" = "Написать в поддержку";
