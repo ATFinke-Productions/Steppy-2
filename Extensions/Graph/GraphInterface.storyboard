@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Graph Extension View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="STPYGraphExtensionViewController" customModule="Graph" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cz0-AP-8jD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="CpG-yx-6Vs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hkc-2i-jEb">
+                                <rect key="frame" x="0.0" y="30" width="320" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="61P-jx-Nfy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steppy must be launched at least once before using this extension" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJN-bt-Gtl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="HrY-KQ-62H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W8j-pl-efM" customClass="STPYGraphView" customModule="Graph" customModuleProvider="target">
+                                <rect key="frame" x="8" y="76" width="305" height="124"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="jeq-jb-a2j"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Hkc-2i-jEb" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="-16" id="9vU-yq-I2u"/>
+                            <constraint firstItem="gJN-bt-Gtl" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="-16" id="FHJ-sP-aPY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hkc-2i-jEb" secondAttribute="trailing" constant="-16" id="IJG-jS-6j3"/>
+                            <constraint firstItem="cz0-AP-8jD" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="JcX-ao-MX7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W8j-pl-efM" secondAttribute="trailing" constant="-9" id="UuA-nO-zWA"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="gJN-bt-Gtl" secondAttribute="bottom" id="cxW-c0-k5Z"/>
+                            <constraint firstItem="W8j-pl-efM" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="-8" id="fsD-NG-pCW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cz0-AP-8jD" secondAttribute="trailing" constant="-16" id="j55-I7-4qu"/>
+                            <constraint firstItem="W8j-pl-efM" firstAttribute="top" secondItem="Hkc-2i-jEb" secondAttribute="bottom" constant="8" id="rHq-AX-ITF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gJN-bt-Gtl" secondAttribute="trailing" constant="-16" id="ryI-Fn-n7L"/>
+                            <constraint firstItem="cz0-AP-8jD" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="-16" id="u2t-nC-crm"/>
+                            <constraint firstItem="Hkc-2i-jEb" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="30" id="yrc-AA-pvl"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="300"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="cz0-AP-8jD" id="y1R-Ou-6TL"/>
+                        <outlet property="disclaimerLabel" destination="gJN-bt-Gtl" id="XmE-V5-z6e"/>
+                        <outlet property="graphView" destination="W8j-pl-efM" id="FE2-6N-gPp"/>
+                        <outlet property="stepsLabel" destination="Hkc-2i-jEb" id="zlF-Ym-lKE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="285"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

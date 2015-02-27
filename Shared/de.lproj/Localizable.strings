@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  Steppy
+
+  Created by Andrew Finke on 7/10/14.
+  Copyright (c) 2014 ATFinke Productions. All rights reserved.
+*/
+
+"Shared GC Error Title" = "Game Center nicht verfügbar";
+"Shared GC Error Message" = "Es scheint ein Fehler beim Einloggen in Game Center aufgetreten zu sein. Versuchen Sie sich mit der Game Center App einzuloggen.";
+"Shared GC Error Button" = "Ok, Danke.";
+
+"Shared Steps Title" = "%@ Schritte";
+
+"Setup Device Title" = "Willkommen beiSteppy!";
+"Setup Device Continue Button" = "Fortfahren";
+"Setup GC Title" = "Game Center aktivieren";
+"Setup GC Main Button" = "Einloggen";
+
+"Leaderboards Title" = "Ranglisten";
+"Leaderboards Today Text" = "Heute";
+"Leaderboards Week Text" = "Diese Woche";
+"Leaderboards Total Text" = "Gesamt";
+
+"Week Total Steps Title" = "Schritte insgesamt";
+
+//New For Swift Version
+
+"Loading" = "Laden";
+
+"Game Center Disclaimer" = "Loggen Sie sich in Game Center ein, um Ihre Schrittanzahl zu teilen und sich mit Anderen aus aller Welt zu messen";
+"Game Center Disable" = "Game Center deaktivieren";
+"Game Center Logged In" = "Eingeloggt";
+
+"HealthKit Disclaimer" = "Steppy benötigt Zugriff auf Ihre Schritt- und Distanzdaten von der Health App, um das beste Ergebnis zu gewährleisten";
+"Grant Access Button" = "Zugriff erlauben";
+
+"No Health App Title" = "Daten nicht verfügbar";
+"No Health App Message" = "Daten aus der Health App werden benötigt, damit Steppy das beste Erlebnis gewährleisten kann";
+"No Data Title" = "Keine Daten";
+"No Data Message" = "Steppy benötigt Schritt- und Distanzdaten aus der Health App, um das beste Erlebnis zu gewährleisten. Bitte wechseln Sie zur Health App und stellen Sie sicher, dass Daten vorhanden sind und Steppy Lesezugriff darauf hat.";
+
+"About Title" = "Über";
+"Website Button" = "Website besuchen";
+"Source Code Button" = "Quellcode ansehen";
+"Support Button" = "E-Mail an Support senden";

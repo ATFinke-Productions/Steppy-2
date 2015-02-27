@@ -1,0 +1,46 @@
+/*
+ Localizable.strings
+ Steppy
+ 
+ Created by Andrew Finke on 7/10/14.
+ Copyright (c) 2014 ATFinke Productions. All rights reserved.
+ */
+
+"Shared GC Error Title" = "Nid yw'r Game Center ar gael";
+"Shared GC Error Message" = "Roedd gwall wrth geisio mewngofnodi i'r Game Center. Rhowch gynnig ar fewngofnodi trwy ap y Game Center.";
+"Shared GC Error Button" = "Iawn, diolch.";
+
+"Shared Steps Title" = "%@ Cam";
+
+"Setup Device Title" = "Croeso i Steppy!";
+"Setup Device Continue Button" = "Parhau";
+"Setup GC Title" = "Galluogi'r Game Center";
+"Setup GC Main Button" = "Mewngofnodi";
+
+"Leaderboards Title" = "Byrddau Cadw Sgôr";
+"Leaderboards Today Text" = "Heddiw";
+"Leaderboards Week Text" = "Wythnos Hon";
+"Leaderboards Total Text" = "Cyfanswm";
+
+"Week Total Steps Title" = "Cyfanswm y Camau";
+
+//New For Swift Version
+
+"Loading" = "Wrthi'n Llwytho";
+
+"Game Center Disclaimer" = "Mewngofnodwch i'r Game Center i rannu nifer eich camau a chystadlu ag eraill o amgylch y byd";
+"Game Center Disable" = "Analluogi'r Game Center";
+"Game Center Logged In" = "Wedi Mewngofnodi";
+
+"HealthKit Disclaimer" = "Mae Steppy angen mynediad at y data ar eich camau a phellteroedd o'r ap Iechyd i ddarparu'r profiad gorau";
+"Grant Access Button" = "Caniatáu Mynediad";
+
+"No Health App Title" = "Data ddim ar gael";
+"No Health App Message" = "Mae angen data o'r ap Iechyd er mwyn i Steppy ddarparu'r profiad gorau";
+"No Data Title" = "Dim Data";
+"No Data Message" = "Mae Steppy angen mynediad at y data ar eich camau a phellteroedd o'r ap Iechyd i ddarparu'r profiad gorau. Ewch i'r ap Iechyd a sicrhewch fod data ar gael a bod gan Steppy caniatâd darllen.";
+
+"About Title" = "Ynglŷn â'r Ap";
+"Website Button" = "Ymweld â'r Wefan";
+"Source Code Button" = "Gweld y Cod Ffynhonnell";
+"Support Button" = "Cefnogaeth ar E-bost";
