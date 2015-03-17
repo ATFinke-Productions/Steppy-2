@@ -11,6 +11,8 @@
 "Shared GC Error Button" = "Понятно.";
 
 "Shared Steps Title" = "Шагов: %@";
+"Shared Steps Watch Title" = "Шагов";
+"Watch Week Title" = "неделя";
 
 "Setup Device Title" = "Добро пожаловать в Steppy!";
 "Setup Device Continue Button" = "Продолжить";

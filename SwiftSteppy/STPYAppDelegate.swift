@@ -32,13 +32,16 @@ class STPYAppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, performFetchWithCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        var hasCompleted = false
         STPYHKManager.sharedInstance.queryData { (error) -> Void in
-            completionHandler(.NewData)
+            if !hasCompleted {
+                hasCompleted = true
+                completionHandler(.NewData)
+            }
         }
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
-        NSNotificationCenter.defaultCenter().postNotificationName("ReloadData", object: nil)
     }
 
     func applicationWillResignActive(application: UIApplication) {

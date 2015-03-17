@@ -58,6 +58,7 @@ class STPYGraphViewController: UIViewController, UIScrollViewDelegate, STPYHKMan
     
     func addNotificationCenterObservers() {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "loadData", name: "ReloadData", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "loadData", name: UIApplicationDidBecomeActiveNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "barTapped:", name: "BarTapped", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "configureLeaderboardButton", name: GKPlayerAuthenticationDidChangeNotificationName, object: nil)
     }

@@ -68,6 +68,7 @@ class STPYLeaderboardViewController: STPYModalViewController, UITableViewDelegat
             currentLeaderboard = totalLeaderboard
         }
         self.tableView.reloadData()
+        self.tableView.contentOffset = CGPointMake(0, 0 - self.tableView.contentInset.top)
     }
 
     //MARK: Table View
