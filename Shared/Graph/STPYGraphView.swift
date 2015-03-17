@@ -86,8 +86,8 @@ class STPYGraphView: UIView {
         
         let sortedDayKeys = Array(weekData.keys).sorted(<)
         
-        for var day = 0; day < 7; day++ {
-            let key = sortedDayKeys[day] as String
+        for key in sortedDayKeys {
+            
             let bar = STPYGraphBar(frame: CGRectZero)
             
             bar.dateKey = key
@@ -104,7 +104,10 @@ class STPYGraphView: UIView {
             graphView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[bar]|", options: nil, metrics: nil, views: ["bar":bar]))
             bars.append(bar)
         }
-        graphView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[bar1][bar2(bar1)][bar3(bar1)][bar4(bar1)][bar5(bar1)][bar6(bar1)][bar7(bar1)]|", options: nil, metrics: nil, views: ["bar1":bars[0],"bar2":bars[1],"bar3":bars[2],"bar4":bars[3],"bar5":bars[4],"bar6":bars[5],"bar7":bars[6]]))
+        
+        if bars.count == 7 {
+            graphView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[bar1][bar2(bar1)][bar3(bar1)][bar4(bar1)][bar5(bar1)][bar6(bar1)][bar7(bar1)]|", options: nil, metrics: nil, views: ["bar1":bars[0],"bar2":bars[1],"bar3":bars[2],"bar4":bars[3],"bar5":bars[4],"bar6":bars[5],"bar7":bars[6]]))
+        }
     }
     
     /**

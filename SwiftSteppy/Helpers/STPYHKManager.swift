@@ -151,14 +151,16 @@ class STPYHKManager: NSObject {
         let hack = stepCountData // Sometimes swift forgets when something is mutable. This fixes it. SUPER annoying.
         let hack1 = distanceDayData // Sometimes swift forgets when something is mutable. This fixes it. SUPER annoying.
         let hack2 = distanceData // Sometimes swift forgets when something is mutable. This fixes it. SUPER annoying.
-        if let currentDay = stepCountData[date.beginningOfWeek().key()]![date.key()] {
-            if currentDay < steps {
-                totalSteps = totalSteps - currentDay + steps
-                stepCountData[date.beginningOfWeek().key()]![date.key()] = steps
-                let oldDistance = distanceDayData[date.key()]!
-                distanceDayData[date.key()] = distance
-                let oldWeekDistance = distanceData[date.beginningOfWeek().key()]!
-                distanceData[date.beginningOfWeek().key()] = oldWeekDistance - oldDistance + distance
+        if let week = stepCountData[date.beginningOfWeek().key()] {
+            if let currentDay = week[date.key()] {
+                if currentDay < steps {
+                    totalSteps = max(totalSteps, totalSteps - currentDay + steps)
+                    stepCountData[date.beginningOfWeek().key()]![date.key()] = steps
+                    let oldDistance = distanceDayData[date.key()]!
+                    distanceDayData[date.key()] = distance
+                    let oldWeekDistance = distanceData[date.beginningOfWeek().key()]!
+                    distanceData[date.beginningOfWeek().key()] = oldWeekDistance - oldDistance + distance
+                }
             }
         }
     }
@@ -254,6 +256,8 @@ class STPYHKManager: NSObject {
                 completion(steps: steps)
             }
             else {
+                println(self.stepCountData)
+                println(weekKey)
                 if self.stepCountData[weekKey]![key] == nil {
                     self.stepCountData[weekKey]![key] = 0
                 }
@@ -404,7 +408,7 @@ class STPYHKManager: NSObject {
     */
     func loadData() {
         if let object = STPYDataHelper.getObjectForKey("lastDate") as? NSDate {
-             lastDate = object
+             lastDate = object.beginningOfDay()
         }
         if let object = STPYDataHelper.getObjectForKey("graphEqualizer") as? Int {
             graphEqualizer = object
