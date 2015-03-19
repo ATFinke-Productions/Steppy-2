@@ -10,7 +10,7 @@ An open-source remake of my step tracking app, Steppy. Now written entirely in S
 
 ##Compatibility
 
-Built with Xcode 6.1.1. Requires iOS 8.0+ for HealthKit.
+Built with Xcode 6.2. Requires iOS 8.0+ for HealthKit.
 
 ## Class Overview
 
