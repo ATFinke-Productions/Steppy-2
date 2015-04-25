@@ -22,13 +22,19 @@ class STPYStepTableViewController: UITableViewController, NCWidgetProviding {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.preferredContentSize = CGSizeMake(0, 132.0)
+        preferredContentSize = CGSizeMake(0, 132.0)
+        tableView.backgroundColor = UIColor.clearColor()
         
         let defaults = NSUserDefaults(suiteName: "group.com.atfinkeproductions.SwiftSteppy")
 
         let todaySteps = defaults?.integerForKey("T-Steps")
         let weekSteps = defaults?.integerForKey("W-Steps")
         let totalSteps = defaults?.integerForKey("A-Steps")
+        
+        data[self.today] = todaySteps
+        data[self.week] = weekSteps
+        data[self.total] = totalSteps
+        tableView.reloadData()
         
         motionHelper.pedometerDataForToday { (steps, distance, date) -> Void in
             let maxSteps = max(steps, todaySteps!)
@@ -58,7 +64,7 @@ class STPYStepTableViewController: UITableViewController, NCWidgetProviding {
     //MARK: Table View
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         switch indexPath.row {
         case 0:
             cell.textLabel?.text = today
@@ -82,7 +88,7 @@ class STPYStepTableViewController: UITableViewController, NCWidgetProviding {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.extensionContext?.openURL(NSURL(string: "Steppy2://")!, completionHandler: nil)
+        extensionContext?.openURL(NSURL(string: "Steppy2://")!, completionHandler: nil)
     }
     
     //MARK: Widget Functions
@@ -95,8 +101,8 @@ class STPYStepTableViewController: UITableViewController, NCWidgetProviding {
         return UIEdgeInsets(top: 0, left: 28, bottom: 39, right: 0)
     }
     
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
-        self.extensionContext?.openURL(NSURL(string: "Steppy2://")!, completionHandler: nil)
-        super.touchesEnded(touches, withEvent: event)
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+        extensionContext?.openURL(NSURL(string: "Steppy2://")!, completionHandler: nil)
+        super.touchesEnded(touches as Set<NSObject>, withEvent: event)
     }
 }

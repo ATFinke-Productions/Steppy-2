@@ -11,9 +11,9 @@ import GameKit
 
 class STPYLeaderboardViewController: STPYModalViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let dayLeaderboard = STPYDataHelper.getObjectForKey(LeaderboardIdentifier.Day.description) as [GKScore]?
-    let weekLeaderboard = STPYDataHelper.getObjectForKey(LeaderboardIdentifier.Week.description) as [GKScore]?
-    let totalLeaderboard = STPYDataHelper.getObjectForKey(LeaderboardIdentifier.Total.description) as [GKScore]?
+    let dayLeaderboard = STPYDataHelper.getObjectForKey(LeaderboardIdentifier.Day.description) as! [GKScore]?
+    let weekLeaderboard = STPYDataHelper.getObjectForKey(LeaderboardIdentifier.Week.description) as! [GKScore]?
+    let totalLeaderboard = STPYDataHelper.getObjectForKey(LeaderboardIdentifier.Total.description) as! [GKScore]?
     
     var currentLeaderboard : [GKScore]!
     
@@ -74,7 +74,7 @@ class STPYLeaderboardViewController: STPYModalViewController, UITableViewDelegat
     //MARK: Table View
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         let score = currentLeaderboard[indexPath.row]
         cell.textLabel?.text = score.player.alias
         cell.detailTextLabel?.text = STPYFormatter.sharedInstance.stringForSteps(Int(score.value) as NSNumber)

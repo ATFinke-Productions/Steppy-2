@@ -19,7 +19,7 @@ class STPYDataHelper: NSObject {
     :returns: The object
     */
     class func getObjectForKey(key : String) -> AnyObject? {
-        let data = NSUserDefaults.standardUserDefaults().objectForKey(key) as NSData?
+        let data = NSUserDefaults.standardUserDefaults().objectForKey(key) as! NSData?
         if data != nil {
             return NSKeyedUnarchiver.unarchiveObjectWithData(data!)
         }

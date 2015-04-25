@@ -281,7 +281,7 @@ class STPYHKManager: NSObject {
     Gets the total number of steps
     */
     func getTotalSteps(completion: ((Double!, NSError!) -> Void)!) {
-        statsQuery(NSDate.distantPast() as NSDate, NSDate(), steps: true) { (result, error) -> Void in
+        statsQuery(NSDate.distantPast() as! NSDate, NSDate(), steps: true) { (result, error) -> Void in
             if let sumQuantity = result?.sumQuantity() {
                 completion(sumQuantity.doubleValueForUnit(HKUnit.countUnit()),nil)
             }
@@ -316,7 +316,7 @@ class STPYHKManager: NSObject {
     func lastDateQuery(steps : Bool, completion: (date : NSDate?) -> Void) {
         totalQueries++
         let quantityType = steps ? stepSampleType : distanceSampleType
-        let sampleQuery = HKSampleQuery(sampleType: quantityType, predicate: HKQuery.predicateForSamplesWithStartDate(NSDate.distantPast() as NSDate, endDate:NSDate(), options: .None), limit: 1, sortDescriptors: [NSSortDescriptor(key:HKSampleSortIdentifierStartDate, ascending: true)]) { (sampleQuery : HKSampleQuery!, results : [AnyObject]?, error : NSError?) -> Void in
+        let sampleQuery = HKSampleQuery(sampleType: quantityType, predicate: HKQuery.predicateForSamplesWithStartDate(NSDate.distantPast() as! NSDate, endDate:NSDate(), options: .None), limit: 1, sortDescriptors: [NSSortDescriptor(key:HKSampleSortIdentifierStartDate, ascending: true)]) { (sampleQuery : HKSampleQuery!, results : [AnyObject]?, error : NSError?) -> Void in
             if let results = results {
                 if let firstSample = results.first as? HKQuantitySample {
                     completion(date: firstSample.startDate.beginningOfWeek())

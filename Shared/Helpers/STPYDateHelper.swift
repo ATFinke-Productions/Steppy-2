@@ -60,7 +60,7 @@ extension NSDate {
     func beginningOfDay() -> NSDate {
         let calendar = NSCalendar.currentCalendar()
         calendar.timeZone = NSTimeZone.systemTimeZone()
-        var dateComps = calendar.components(NSCalendarUnit.YearCalendarUnit | NSCalendarUnit.MonthCalendarUnit | NSCalendarUnit.DayCalendarUnit, fromDate: self)
+        var dateComps = calendar.components(.CalendarUnitYear | .CalendarUnitMonth | .CalendarUnitDay, fromDate: self)
         dateComps.hour = 0
         dateComps.minute = 0
         dateComps.second = 0
@@ -77,7 +77,7 @@ extension NSDate {
         calendar.timeZone = NSTimeZone.systemTimeZone()
         var date : NSDate?
         var interval : NSTimeInterval = 0
-        calendar.rangeOfUnit(.WeekCalendarUnit, startDate: &date, interval: &interval, forDate: self)
+        calendar.rangeOfUnit(.CalendarUnitWeekOfYear, startDate: &date, interval: &interval, forDate: self)
         if let date = date {
             return date.beginningOfDay()
         }

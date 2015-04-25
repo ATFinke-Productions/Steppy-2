@@ -36,21 +36,21 @@ class InterfaceController: WKInterfaceController {
         motionHelper.pedometerDataForToday { (steps, distance, date) -> Void in
             let maxSteps = max(steps, todaySteps!)
             let stepString = STPYFormatter.sharedInstance.stringForSteps(NSNumber(integer: maxSteps))
-            let row = self.table.rowControllerAtIndex(0) as STPYTableViewCellController
+            let row = self.table.rowControllerAtIndex(0) as! STPYTableViewCellController
             row.stepsLabel.setText(stepString)
         }
         
         motionHelper.pedometerDataForThisWeek { (steps, distance) -> Void in
             let maxSteps = max(steps, weekSteps!)
             let stepString = STPYFormatter.sharedInstance.stringForSteps(NSNumber(integer: maxSteps))
-            let row = self.table.rowControllerAtIndex(1) as STPYTableViewCellController
+            let row = self.table.rowControllerAtIndex(1) as! STPYTableViewCellController
             row.stepsLabel.setText(stepString)
         }
         
         motionHelper.pedometerDataForAllTime { (steps, distance) -> Void in
             let maxSteps = max(steps, totalSteps!)
             let stepString = STPYFormatter.sharedInstance.stringForSteps(NSNumber(integer: maxSteps))
-            let row = self.table.rowControllerAtIndex(2) as STPYTableViewCellController
+            let row = self.table.rowControllerAtIndex(2) as! STPYTableViewCellController
             row.stepsLabel.setText(stepString)
         }
     }
@@ -59,7 +59,7 @@ class InterfaceController: WKInterfaceController {
         table.setNumberOfRows(3, withRowType: "STPYTableViewCellController")
         let items = [today, week, total]
         for (index,item) in enumerate(items)  {
-            let row = table.rowControllerAtIndex(index) as STPYTableViewCellController
+            let row = table.rowControllerAtIndex(index) as! STPYTableViewCellController
             row.titleLabel.setText(item)
         }
     }

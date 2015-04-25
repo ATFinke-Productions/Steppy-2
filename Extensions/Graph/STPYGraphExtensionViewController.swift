@@ -28,7 +28,7 @@ class STPYGraphExtensionViewController: UIViewController, NCWidgetProviding {
         graphView.dayLabels = STPYDateHelper.dayAbbreviations()
         
         let defaults = NSUserDefaults(suiteName: "group.com.atfinkeproductions.SwiftSteppy")
-        if var weekData = defaults?.objectForKey("W-Data") as [String:Int]? {
+        if var weekData = defaults?.objectForKey("W-Data") as! [String:Int]? {
             setViews([stepsLabel,dateLabel,graphView], hidden: false)
             disclaimerLabel.hidden = true
             
@@ -116,7 +116,7 @@ class STPYGraphExtensionViewController: UIViewController, NCWidgetProviding {
         return UIEdgeInsets(top: 39, left: 47, bottom: 39, right: 47)
     }
     
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.extensionContext?.openURL(NSURL(string: "Steppy2://")!, completionHandler: nil)
     }
 }
