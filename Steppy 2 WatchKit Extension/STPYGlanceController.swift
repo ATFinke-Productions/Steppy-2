@@ -21,12 +21,10 @@ class STPYGlanceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         let todaySteps = defaults?.integerForKey("T-Steps")
-        println(todaySteps)
         motionHelper.pedometerDataForToday { (steps, distance, date) -> Void in
             let maxSteps = max(steps, todaySteps!)
             let stepString = STPYFormatter.sharedInstance.string(NSNumber(integer: maxSteps))
             self.stepsLabel.setText(stepString)
-            println(maxSteps)
         }
         todayLabel.setText(NSLocalizedString("Leaderboards Today Text", comment: ""))
         titleLabel.setText(NSLocalizedString("Shared Steps Watch Title", comment: ""))

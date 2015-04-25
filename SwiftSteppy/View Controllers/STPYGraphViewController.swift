@@ -328,7 +328,7 @@ class STPYGraphViewController: UIViewController, UIScrollViewDelegate, STPYHKMan
         lastSummeryView?.switchMode()
         timerForReturnToNormal?.invalidate()
         
-        let key = notification.object as String
+        let key = notification.object as! String
         let date = NSDate(key: key)
         let weekKey = date.beginningOfWeekKey()
         
@@ -353,7 +353,7 @@ class STPYGraphViewController: UIViewController, UIScrollViewDelegate, STPYHKMan
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier != "showSetup" {
-            let controller = (segue.destinationViewController as UINavigationController).topViewController as STPYModalViewController
+            let controller = (segue.destinationViewController as! UINavigationController).topViewController as! STPYModalViewController
             controller.color = self.view.backgroundColor
         }
     }

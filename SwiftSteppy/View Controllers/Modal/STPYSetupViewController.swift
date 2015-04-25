@@ -77,7 +77,7 @@ class STPYSetupViewController: STPYModalViewController {
         
         let hkTypesToRead = NSSet(array:[HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierStepCount), HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierDistanceWalkingRunning),])
         
-        STPYHKManager.sharedInstance.hkStore.requestAuthorizationToShareTypes(nil, readTypes: hkTypesToRead) { (success, error) -> Void in
+        STPYHKManager.sharedInstance.hkStore.requestAuthorizationToShareTypes(nil, readTypes: hkTypesToRead as Set<NSObject>) { (success, error) -> Void in
             
             dispatch_async(dispatch_get_main_queue(),{
                 if let font = UIFont(name: "AvenirNext-DemiBold", size: 20) {
