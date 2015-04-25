@@ -9,6 +9,7 @@
 import WatchKit
 
 class STPYTableViewCellController: NSObject {
-    @IBOutlet weak var detailLabel: WKInterfaceLabel!
     @IBOutlet weak var titleLabel: WKInterfaceLabel!
+   // @IBOutlet weak var distanceLabel: WKInterfaceLabel!
+    @IBOutlet weak var stepsLabel: WKInterfaceLabel!
 }

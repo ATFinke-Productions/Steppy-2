@@ -133,6 +133,7 @@ class STPYHKManager: NSObject {
         }
         timer.invalidate()
         cmHelper.pedometerDataForToday { (steps, distance, date) -> Void in
+            self.graphEqualizer = max(self.graphEqualizer, steps)
             self.adjustCurrentDataForPedometerData(steps, distance: distance, date: date)
             self.delegate?.loadingProgressUpdated(STPYFormatter.sharedInstance.percentString(1))
             self.saveData()
@@ -156,6 +157,7 @@ class STPYHKManager: NSObject {
                 if currentDay < steps {
                     totalSteps = max(totalSteps, totalSteps - currentDay + steps)
                     stepCountData[date.beginningOfWeek().key()]![date.key()] = steps
+                    self.graphEqualizer = max(self.graphEqualizer, steps)
                     let oldDistance = distanceDayData[date.key()]!
                     distanceDayData[date.key()] = distance
                     let oldWeekDistance = distanceData[date.beginningOfWeek().key()]!
@@ -225,12 +227,8 @@ class STPYHKManager: NSObject {
         let date = NSDate()
         var start = date.beginningOfDay()
         var end = date
-        var largestDay = graphEqualizer
         while lastDate.timeIntervalSinceDate(start) < 0 {
-            loadStepDataForDay(start, end, completion: { (steps) -> Void in
-                largestDay = max(largestDay, steps)
-                self.graphEqualizer = largestDay
-            })
+            loadStepDataForDay(start, end)
             loadDistanceData(start, end, forWeek: false)
             end = start.endOfPreviousDay()
             start = end.beginningOfDay()
@@ -243,7 +241,7 @@ class STPYHKManager: NSObject {
     :param: start The start of the day
     :param: end The end of the day
     */
-    func loadStepDataForDay(start : NSDate,_ end : NSDate, completion: (steps: Int!) -> Void) {
+    func loadStepDataForDay(start : NSDate,_ end : NSDate) {
         let key = start.key()
         let weekKey = start.beginningOfWeekKey()
         statsQuery(start, end, steps: true) { (result, error) -> Void in
@@ -253,15 +251,12 @@ class STPYHKManager: NSObject {
                 if self.stepCountData[weekKey] != nil {
                     self.stepCountData[weekKey]![key] = steps
                 }
-                completion(steps: steps)
+                self.graphEqualizer = max(self.graphEqualizer, steps)
             }
             else {
-                println(self.stepCountData)
-                println(weekKey)
                 if self.stepCountData[weekKey]![key] == nil {
                     self.stepCountData[weekKey]![key] = 0
                 }
-                completion(steps: self.stepCountData[weekKey]![key])
             }
             self.completedQueries++
         }

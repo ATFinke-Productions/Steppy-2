@@ -17,6 +17,8 @@
 		141A330B1A880DE000880119 /* STPYCMHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141A33091A880DE000880119 /* STPYCMHelper.swift */; };
 		141A330C1A880DE000880119 /* STPYCMHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141A33091A880DE000880119 /* STPYCMHelper.swift */; };
 		144E20AA1A4CA876002CEDB5 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14ED9F871A4B91C0004CFB5F /* NotificationCenter.framework */; };
+		1465F0F81ACC720100A8E637 /* Steppy 2 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 147E495C1AA11F650037C395 /* Steppy 2 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1465F0FC1ACC882600A8E637 /* STPYGlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1465F0FB1ACC882600A8E637 /* STPYGlanceController.swift */; };
 		146ADA291A69616B0056D187 /* StepCount.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 144E20A91A4CA876002CEDB5 /* StepCount.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		146ADA451A6965DC0056D187 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14ED9F871A4B91C0004CFB5F /* NotificationCenter.framework */; };
 		146ADA4F1A6965DC0056D187 /* Graph.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 146ADA441A6965DC0056D187 /* Graph.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -67,6 +69,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1465F0F91ACC720100A8E637 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14C603B01A47241900648CE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 147E495B1AA11F650037C395;
+			remoteInfo = "Steppy 2 WatchKit Extension";
+		};
 		146ADA2A1A69616B0056D187 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 14C603B01A47241900648CE3 /* Project object */;
@@ -98,6 +107,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				146ADA4F1A6965DC0056D187 /* Graph.appex in Embed App Extensions */,
+				1465F0F81ACC720100A8E637 /* Steppy 2 WatchKit Extension.appex in Embed App Extensions */,
 				146ADA291A69616B0056D187 /* StepCount.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -117,6 +127,8 @@
 		141DC7621A791A42004047E1 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		144E20A91A4CA876002CEDB5 /* StepCount.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StepCount.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1462C1221A4CEF4D0032B8A8 /* SwiftSteppy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SwiftSteppy.entitlements; sourceTree = "<group>"; };
+		1465F0FB1ACC882600A8E637 /* STPYGlanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STPYGlanceController.swift; sourceTree = "<group>"; };
+		1465F0FD1ACC915100A8E637 /* Steppy 2 WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Steppy 2 WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		146ADA441A6965DC0056D187 /* Graph.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Graph.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		14786C221A8BB12000540231 /* MutabilityCrashes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MutabilityCrashes.txt; sourceTree = "<group>"; };
 		147E495C1AA11F650037C395 /* Steppy 2 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Steppy 2 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,7 +226,9 @@
 		147E495D1AA11F650037C395 /* Steppy 2 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1465F0FD1ACC915100A8E637 /* Steppy 2 WatchKit Extension.entitlements */,
 				147E49601AA11F650037C395 /* InterfaceController.swift */,
+				1465F0FB1ACC882600A8E637 /* STPYGlanceController.swift */,
 				14D00B0A1AA13C5F00EE7562 /* STPYTableViewCellController.swift */,
 				147E49621AA11F650037C395 /* Images.xcassets */,
 				147E495E1AA11F650037C395 /* Supporting Files */,
@@ -490,6 +504,7 @@
 			dependencies = (
 				146ADA2B1A69616B0056D187 /* PBXTargetDependency */,
 				146ADA4E1A6965DC0056D187 /* PBXTargetDependency */,
+				1465F0FA1ACC720100A8E637 /* PBXTargetDependency */,
 			);
 			name = SwiftSteppy;
 			productName = SwiftSteppy;
@@ -527,6 +542,11 @@
 					147E495B1AA11F650037C395 = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = V7H4B3C39A;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					147E49651AA11F660037C395 = {
 						CreatedOnToolsVersion = 6.2;
@@ -670,6 +690,7 @@
 				147E49611AA11F650037C395 /* InterfaceController.swift in Sources */,
 				14D00B0B1AA13C5F00EE7562 /* STPYTableViewCellController.swift in Sources */,
 				14D00B0E1AA13D7000EE7562 /* STPYDataHelper.swift in Sources */,
+				1465F0FC1ACC882600A8E637 /* STPYGlanceController.swift in Sources */,
 				14D00B0D1AA13D5D00EE7562 /* STPYFormatter.swift in Sources */,
 				14D00B0C1AA13D5700EE7562 /* STPYCMHelper.swift in Sources */,
 				14D00B0F1AA13D7300EE7562 /* STPYDateHelper.swift in Sources */,
@@ -703,6 +724,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1465F0FA1ACC720100A8E637 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 147E495B1AA11F650037C395 /* Steppy 2 WatchKit Extension */;
+			targetProxy = 1465F0F91ACC720100A8E637 /* PBXContainerItemProxy */;
+		};
 		146ADA2B1A69616B0056D187 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 144E20A81A4CA876002CEDB5 /* StepCount */;
@@ -877,6 +903,7 @@
 		147E49791AA11F660037C395 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Steppy 2 WatchKit Extension/Steppy 2 WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -887,6 +914,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -894,6 +922,7 @@
 		147E497A1AA11F660037C395 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Steppy 2 WatchKit Extension/Steppy 2 WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -901,6 +930,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

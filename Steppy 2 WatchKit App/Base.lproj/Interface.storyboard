@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="i7Y-wY-3ai">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="i7Y-wY-3ai">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
@@ -10,85 +10,59 @@
             <objects>
                 <controller title="Steppy" id="i7Y-wY-3ai" customClass="InterfaceController" customModule="Steppy_2_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group height="5" alignment="left" id="g2d-30-6PG"/>
-                        <label alignment="center" text="Label" id="7hZ-0q-hZg">
-                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
-                        </label>
-                        <separator width="0.50000000000000011" alignment="center" id="oGx-mg-W8x">
-                            <color key="color" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.25" colorSpace="calibratedRGB"/>
-                        </separator>
-                        <table alignment="left" id="27U-y5-Jb5">
+                        <table alignment="left" id="WlY-6b-UD7">
                             <items>
-                                <tableRow identifier="STPYTableViewCellController" selectable="NO" id="qxx-YG-EoS" customClass="STPYTableViewCellController" customModule="Steppy_2_WatchKit_Extension">
-                                    <group key="rootItem" width="1" height="35" alignment="left" id="Zpf-4r-hVr">
+                                <tableRow identifier="STPYTableViewCellController" selectable="NO" id="duR-OT-fQd" customClass="STPYTableViewCellController" customModule="Steppy_2_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="OtM-vS-kdA">
                                         <items>
-                                            <label alignment="left" verticalAlignment="center" text="Today" textAlignment="left" minimumScaleFactor="0.50000000000000011" id="Qzc-Fg-Vmo">
-                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <label alignment="left" text="Today" id="1Cj-BS-MNb">
+                                                <fontDescription key="font" type="system" weight="light" pointSize="15"/>
                                             </label>
-                                            <label alignment="right" verticalAlignment="center" text="0" textAlignment="right" minimumScaleFactor="0.50000000000000011" id="MxI-Vl-7hE"/>
+                                            <label alignment="left" text="0 A" minimumScaleFactor="0.20000000000000015" id="G6j-iK-Ys3">
+                                                <fontDescription key="font" type="system" weight="medium" pointSize="20"/>
+                                            </label>
                                         </items>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <edgeInsets key="margins" left="3" right="0.0" top="0.0" bottom="0.0"/>
                                     </group>
                                     <connections>
-                                        <outlet property="detailLabel" destination="MxI-Vl-7hE" id="x1b-DB-hg4"/>
-                                        <outlet property="titleLabel" destination="Qzc-Fg-Vmo" id="SnT-EC-NY7"/>
+                                        <outlet property="stepsLabel" destination="G6j-iK-Ys3" id="epH-9M-AHa"/>
+                                        <outlet property="titleLabel" destination="1Cj-BS-MNb" id="B5w-ez-SrM"/>
                                     </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
                     <connections>
-                        <outlet property="table" destination="27U-y5-Jb5" id="oxr-wO-FCo"/>
-                        <outlet property="titleLabel" destination="7hZ-0q-hZg" id="0Hz-Km-0be"/>
+                        <outlet property="table" destination="WlY-6b-UD7" id="zgw-ap-eAY"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="164" y="217"/>
+            <point key="canvasLocation" x="164" y="177.75"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="975-nt-a2k">
             <objects>
-                <glanceController topTemplateType="groupLeftLarge" id="yXa-Jb-vgv" customClass="InterfaceController" customModule="Steppy_2_WatchKit_Extension">
+                <glanceController topTemplateType="body1Large" bottomTemplateType="extraLargeBody1Group" id="yXa-Jb-vgv" customClass="STPYGlanceController" customModule="Steppy_2_WatchKit_Extension">
                     <items>
-                        <group alignment="left" id="vHD-YF-iwB">
-                            <items>
-                                <imageView alignment="left" image="CircleIcon" id="SFu-hw-o9M"/>
-                            </items>
-                        </group>
-                        <label alignment="left" text=" " id="5hb-B8-hxA"/>
-                        <label alignment="left" text="Label" id="mjH-xH-fil"/>
-                        <label alignment="left" id="EwG-Xm-58p"/>
-                        <group alignment="left" id="XxY-BH-kOg">
-                            <items>
-                                <table alignment="left" id="paD-hx-YhP">
-                                    <items>
-                                        <tableRow identifier="STPYTableViewCellController" selectable="NO" id="eCE-uM-1E1" customClass="STPYTableViewCellController" customModule="Steppy_2_WatchKit_Extension">
-                                            <group key="rootItem" width="1" height="35" alignment="left" id="4Sv-bO-XcI">
-                                                <items>
-                                                    <label alignment="left" verticalAlignment="center" text="Today" textAlignment="left" minimumScaleFactor="0.50000000000000011" id="Vdy-Df-PFn">
-                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </label>
-                                                    <label alignment="right" verticalAlignment="center" text="0" textAlignment="right" minimumScaleFactor="0.50000000000000011" id="1QE-iK-4pF"/>
-                                                </items>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            </group>
-                                            <connections>
-                                                <outlet property="detailLabel" destination="1QE-iK-4pF" id="CiH-Q1-EKR"/>
-                                                <outlet property="titleLabel" destination="Vdy-Df-PFn" id="6nq-40-ywM"/>
-                                            </connections>
-                                        </tableRow>
-                                    </items>
-                                </table>
-                            </items>
+                        <label alignment="left" text="Steps" id="5hb-B8-hxA">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                        <label alignment="left" text="Today" minimumScaleFactor="0.50000000000000011" id="GGf-KJ-uCQ"/>
+                        <label alignment="left" text="1234" minimumScaleFactor="0.20000000000000015" id="gOV-VX-dPH"/>
+                        <label alignment="left" minimumScaleFactor="0.50000000000000011" id="4tV-gz-ncs"/>
+                        <group alignment="left" id="sIU-re-5Tw">
+                            <edgeInsets key="margins" left="5" right="0.0" top="0.0" bottom="0.0"/>
                         </group>
                     </items>
                     <connections>
-                        <outlet property="table" destination="paD-hx-YhP" id="YlJ-bn-VHK"/>
-                        <outlet property="titleLabel" destination="mjH-xH-fil" id="VqC-ch-5BD"/>
+                        <outlet property="stepsLabel" destination="gOV-VX-dPH" id="3wR-AF-NWX"/>
+                        <outlet property="titleLabel" destination="5hb-B8-hxA" id="kfM-Kf-68b"/>
+                        <outlet property="todayLabel" destination="GGf-KJ-uCQ" id="zTK-Mf-RRE"/>
                     </connections>
                 </glanceController>
             </objects>
-            <point key="canvasLocation" x="164" y="431"/>
+            <point key="canvasLocation" x="164" y="452"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
