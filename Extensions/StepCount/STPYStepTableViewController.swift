@@ -22,7 +22,7 @@ class STPYStepTableViewController: UITableViewController, NCWidgetProviding {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.preferredContentSize = tableView.contentSize
+        self.preferredContentSize = CGSizeMake(0, 132.0)
         
         let defaults = NSUserDefaults(suiteName: "group.com.atfinkeproductions.SwiftSteppy")
 
@@ -34,21 +34,18 @@ class STPYStepTableViewController: UITableViewController, NCWidgetProviding {
             let maxSteps = max(steps, todaySteps!)
             self.data[self.today] = maxSteps
             self.tableView.reloadData()
-            self.preferredContentSize = self.tableView.contentSize
         }
         
         motionHelper.pedometerDataForThisWeek { (steps, distance) -> Void in
             let maxSteps = max(steps, weekSteps!)
             self.data[self.week] = maxSteps
             self.tableView.reloadData()
-            self.preferredContentSize = self.tableView.contentSize
         }
         
         motionHelper.pedometerDataForAllTime { (steps, distance) -> Void in
             let maxSteps = max(steps, totalSteps!)
             self.data[self.total] = maxSteps
             self.tableView.reloadData()
-            self.preferredContentSize = self.tableView.contentSize
         }
         // Do any additional setup after loading the view from its nib.
     }

@@ -92,7 +92,7 @@ class STPYGraphView: UIView {
             
             bar.dateKey = key
             bar.steps = weekData[key]
-            bar.divider = divider
+            bar.divider = Int(Double(divider) * 1.1)
             bar.backgroundColor = UIColor.clearColor()
             
             graphView.addSubview(bar)

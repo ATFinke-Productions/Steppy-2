@@ -12,10 +12,9 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var table: WKInterfaceTable!
-    @IBOutlet weak var titleLabel: WKInterfaceLabel!
     
     let today = NSLocalizedString("Leaderboards Today Text", comment: "")
-    let week = NSLocalizedString("Watch Week Title", comment: "")
+    let week = NSLocalizedString("Leaderboards Week Text", comment: "")
     let total = NSLocalizedString("Leaderboards Total Text", comment: "")
     
     var reloadTimer : NSTimer?
@@ -25,7 +24,6 @@ class InterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         loadTableView()
-        titleLabel.setText(NSLocalizedString("Shared Steps Watch Title", comment: ""))
         // Configure interface objects here.
     }
     
@@ -34,26 +32,26 @@ class InterfaceController: WKInterfaceController {
         let todaySteps = defaults?.integerForKey("T-Steps")
         let weekSteps = defaults?.integerForKey("W-Steps")
         let totalSteps = defaults?.integerForKey("A-Steps")
-        
+        println(defaults?.dictionaryRepresentation())
         motionHelper.pedometerDataForToday { (steps, distance, date) -> Void in
             let maxSteps = max(steps, todaySteps!)
-            let stepString = STPYFormatter.sharedInstance.string(NSNumber(integer: maxSteps))
+            let stepString = STPYFormatter.sharedInstance.stringForSteps(NSNumber(integer: maxSteps))
             let row = self.table.rowControllerAtIndex(0) as STPYTableViewCellController
-            row.detailLabel.setText(stepString)
+            row.stepsLabel.setText(stepString)
         }
         
         motionHelper.pedometerDataForThisWeek { (steps, distance) -> Void in
             let maxSteps = max(steps, weekSteps!)
-            let stepString = STPYFormatter.sharedInstance.string(NSNumber(integer: maxSteps))
+            let stepString = STPYFormatter.sharedInstance.stringForSteps(NSNumber(integer: maxSteps))
             let row = self.table.rowControllerAtIndex(1) as STPYTableViewCellController
-            row.detailLabel.setText(stepString)
+            row.stepsLabel.setText(stepString)
         }
         
         motionHelper.pedometerDataForAllTime { (steps, distance) -> Void in
             let maxSteps = max(steps, totalSteps!)
-            let stepString = STPYFormatter.sharedInstance.string(NSNumber(integer: maxSteps))
+            let stepString = STPYFormatter.sharedInstance.stringForSteps(NSNumber(integer: maxSteps))
             let row = self.table.rowControllerAtIndex(2) as STPYTableViewCellController
-            row.detailLabel.setText(stepString)
+            row.stepsLabel.setText(stepString)
         }
     }
 
