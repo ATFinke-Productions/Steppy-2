@@ -112,3 +112,4 @@ Thanks to William Preston, Sam Lim, Stephen Stearns, and Varun Gupta for being a
 ### Apple
 Thanks to Apple for allowing me attend WWDC 2012-14 on [student scholarship](https://developer.apple.com/wwdc/students/). It's my Disneyland.
 
+<sup>(2014 - 11th Grade)<sup>
