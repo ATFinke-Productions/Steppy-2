@@ -35,7 +35,7 @@ class STPYCMHelper: NSObject {
     Gets all the pedometer data
     */
     func pedometerDataForAllTime(completion: ((steps : Int, distance : Double) -> Void)!) {
-        dataFromStartDay(NSDate.distantPast() as! NSDate, completion: { (steps, distance) -> Void in
+        dataFromStartDay(NSDate.distantPast() , completion: { (steps, distance) -> Void in
             completion(steps: steps, distance: distance)
         })
     }
@@ -43,14 +43,13 @@ class STPYCMHelper: NSObject {
     /**
     Gets the pedometer data from the start day
     
-    :param: startDate The starting date
+    - parameter startDate: The starting date
     */
     func dataFromStartDay(startDate: NSDate, completion: ((steps : Int, distance : Double) -> Void)!) {
-        self.pedometer.queryPedometerDataFromDate(startDate, toDate: NSDate()) { (data : CMPedometerData!, error) -> Void in
-            if error == nil {
+        pedometer.queryPedometerDataFromDate(startDate, toDate: NSDate()) { (data : CMPedometerData?, error: NSError?) -> Void in
+            if let data = data, let distance = data.distance where error == nil {
                 let steps = data.numberOfSteps.integerValue
-                let distance = data.distance.doubleValue
-                completion(steps: steps, distance: distance)
+                completion(steps: steps, distance: distance.doubleValue)
             }
             else {
                 completion(steps: 0, distance: 0.0)

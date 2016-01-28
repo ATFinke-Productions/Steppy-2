@@ -74,7 +74,7 @@ class STPYLeaderboardViewController: STPYModalViewController, UITableViewDelegat
     //MARK: Table View
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) 
         let score = currentLeaderboard[indexPath.row]
         cell.textLabel?.text = score.player.alias
         cell.detailTextLabel?.text = STPYFormatter.sharedInstance.stringForSteps(Int(score.value) as NSNumber)

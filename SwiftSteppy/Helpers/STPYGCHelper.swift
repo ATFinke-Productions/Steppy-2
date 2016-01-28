@@ -15,9 +15,9 @@ class STPYGCHelper: NSObject {
     /**
     Reports the user step counts to Game Center
     
-    :param: daySteps The user's steps today
-    :param: weekSteps The user's steps this week
-    :param: totalSteps The user's steps from all time
+    - parameter daySteps: The user's steps today
+    - parameter weekSteps: The user's steps this week
+    - parameter totalSteps: The user's steps from all time
     */
     func reportSteps(daySteps : NSInteger,_ weekSteps : NSInteger,_ totalSteps : NSInteger) {
         var scores = [GKScore]()
@@ -44,7 +44,7 @@ class STPYGCHelper: NSObject {
     /**
     Loads the Game Center leaderboard data
     
-    :param: identifier The leaderboard identifier
+    - parameter identifier: The leaderboard identifier
     */
     func loadLeaderboardData(identifier : LeaderboardIdentifier) {
         let request = GKLeaderboard()
@@ -64,12 +64,12 @@ class STPYGCHelper: NSObject {
     /**
     Authenticates the local user
     
-    :param: rootViewController The view controller to present the authentication view controller from
+    - parameter rootViewController: The view controller to present the authentication view controller from
     */
     func authenticate(rootViewController : UIViewController, completion: ((authenticated : Bool!) -> Void)!) {
-        var localPlayer = GKLocalPlayer.localPlayer()
-        localPlayer.authenticateHandler = {(viewController : UIViewController!, error : NSError!) -> Void in
-            if ((viewController) != nil) {
+        let localPlayer = GKLocalPlayer.localPlayer()
+        localPlayer.authenticateHandler = {(viewController : UIViewController?, error : NSError?) -> Void in
+            if let viewController = viewController {
                 rootViewController.presentViewController(viewController, animated: true, completion: nil)
             }
             else if localPlayer.authenticated {
@@ -89,7 +89,7 @@ class STPYGCHelper: NSObject {
     /**
     An alert for when the app can't authenticate the user
     
-    :param: viewController The view controller to present the alert view controller from
+    - parameter viewController: The view controller to present the alert view controller from
     */
     func showGameCenterAlert(viewController : UIViewController) {
         let alertController = UIAlertController(title: NSLocalizedString("Shared GC Error Title", comment: ""), message: NSLocalizedString("Shared GC Error Message", comment: ""), preferredStyle: UIAlertControllerStyle.Alert)

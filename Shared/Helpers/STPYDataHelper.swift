@@ -14,9 +14,9 @@ class STPYDataHelper: NSObject {
     /**
     Gets an NSUserDefaults NSData value and unarchives it
     
-    :param: key The NSUserDefaults key
+    - parameter key: The NSUserDefaults key
     
-    :returns: The object
+    - returns: The object
     */
     class func getObjectForKey(key : String) -> AnyObject? {
         let data = NSUserDefaults.standardUserDefaults().objectForKey(key) as! NSData?
@@ -29,8 +29,8 @@ class STPYDataHelper: NSObject {
     /**
     Saves an object as NSData to NSUserDefaults for specified key
     
-    :param: object The bool value
-    :param: key The NSUserDefaults key
+    - parameter object: The bool value
+    - parameter key: The NSUserDefaults key
     */
     class func saveDataForKey(object : AnyObject?, key : String) {
         if let object: AnyObject = object {
@@ -44,9 +44,9 @@ class STPYDataHelper: NSObject {
     /**
     Gets an NSUserDefaults key bool value
     
-    :param: key The NSUserDefaults key
+    - parameter key: The NSUserDefaults key
     
-    :returns: value The bool value
+    - returns: value The bool value
     */
     class func key(key : String) -> Bool {
         return NSUserDefaults.standardUserDefaults().boolForKey(key)
@@ -55,8 +55,8 @@ class STPYDataHelper: NSObject {
     /**
     Sets an NSUserDefaults key to a bool value
     
-    :param: value The bool value
-    :param: key The NSUserDefaults key 
+    - parameter value: The bool value
+    - parameter key: The NSUserDefaults key 
     */
     class func keyIs(value : Bool, key : String) {
         let defaults = NSUserDefaults.standardUserDefaults()

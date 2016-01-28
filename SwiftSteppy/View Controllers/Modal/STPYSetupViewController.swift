@@ -75,9 +75,9 @@ class STPYSetupViewController: STPYModalViewController {
         UIApplication.sharedApplication().statusBarStyle = .Default
         UINavigationBar.appearance().titleTextAttributes =  [NSForegroundColorAttributeName : UIColor.blackColor()]
         
-        let hkTypesToRead = NSSet(array:[HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierStepCount), HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierDistanceWalkingRunning),])
+        let hkTypesToRead = NSSet(array:[HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierStepCount)!, HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierDistanceWalkingRunning)!,]) as! Set<HKObjectType>
         
-        STPYHKManager.sharedInstance.hkStore.requestAuthorizationToShareTypes(nil, readTypes: hkTypesToRead as Set<NSObject>) { (success, error) -> Void in
+        STPYHKManager.sharedInstance.hkStore.requestAuthorizationToShareTypes(nil, readTypes: hkTypesToRead) { (success, error) -> Void in
             
             dispatch_async(dispatch_get_main_queue(),{
                 if let font = UIFont(name: "AvenirNext-DemiBold", size: 20) {

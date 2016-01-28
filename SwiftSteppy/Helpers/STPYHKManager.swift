@@ -52,8 +52,8 @@ class STPYHKManager: NSObject {
     Detects if the app had access to necessary HealthKit data
     */
     func hasAccess(completion: ((access : Bool) -> Void)!) {
-        lastDateQuery(true) { (date) -> Void in
-            if let date = date {
+        lastDateQuery(true) { (lastDate) -> Void in
+            if let _ = lastDate {
                 self.lastDateQuery(false) { (date) -> Void in
                     if let date = date {
                         self.cmHelper.pedometerDataForToday({ (steps, distance, date) -> Void in
@@ -76,7 +76,7 @@ class STPYHKManager: NSObject {
     /**
     Shows an alert for having no HealthKit data
     
-    :param: viewController The view controller to present the alert view controller from
+    - parameter viewController: The view controller to present the alert view controller from
     */
     func showDataAlert(viewController : UIViewController) {
         let alertController = UIAlertController(title: NSLocalizedString("No Data Title", comment: ""), message: NSLocalizedString("No Data Message", comment: ""), preferredStyle: UIAlertControllerStyle.Alert)
@@ -132,6 +132,7 @@ class STPYHKManager: NSObject {
             return
         }
         timer.invalidate()
+        print(stepCountData)
         cmHelper.pedometerDataForToday { (steps, distance, date) -> Void in
             self.graphEqualizer = max(self.graphEqualizer, steps)
             self.adjustCurrentDataForPedometerData(steps, distance: distance, date: date)
@@ -144,14 +145,11 @@ class STPYHKManager: NSObject {
     /**
     Adjusts the HealthKit data with the lastest Pedometer data which is more up to date
     
-    :param: steps The step count
-    :param: steps The distance
-    :param: steps The date
+    - parameter steps: The step count
+    - parameter steps: The distance
+    - parameter steps: The date
     */
     func adjustCurrentDataForPedometerData(steps : Int, distance : Double, date : NSDate) {
-        let hack = stepCountData // Sometimes swift forgets when something is mutable. This fixes it. SUPER annoying.
-        let hack1 = distanceDayData // Sometimes swift forgets when something is mutable. This fixes it. SUPER annoying.
-        let hack2 = distanceData // Sometimes swift forgets when something is mutable. This fixes it. SUPER annoying.
         if let week = stepCountData[date.beginningOfWeek().key()] {
             if let currentDay = week[date.key()] {
                 if currentDay < steps {
@@ -179,7 +177,7 @@ class STPYHKManager: NSObject {
     /**
     Loads the distance data since the date
     
-    :param: lastDate The last date to get data from
+    - parameter lastDate: The last date to get data from
     */
     func loadDistanceDataWithLastDataDate(lastDate : NSDate) {
         let date = NSDate()
@@ -195,8 +193,8 @@ class STPYHKManager: NSObject {
     /**
     Loads the distance data for a specifc week or day
     
-    :param: start The start of the time period
-    :param: end The end of the time period
+    - parameter start: The start of the time period
+    - parameter end: The end of the time period
     */
     func loadDistanceData(start : NSDate,_ end : NSDate, forWeek : Bool) {
         statsQuery(start, end, steps: false) { (result, error) -> Void in
@@ -204,11 +202,9 @@ class STPYHKManager: NSObject {
                 let key = start.key()
                 let value = sumQuantity.doubleValueForUnit(HKUnit.meterUnit())
                 if forWeek == true {
-                    let hack = self.distanceData // Sometimes swift forgets when something is mutable. This fixes it. SUPER annoying.
                     self.distanceData[key] = value
                 }
                 else {
-                    let hack = self.distanceDayData // Sometimes swift forgets when something is mutable. This fixes it. SUPER annoying.
                     self.distanceDayData[key] = value
                 }
             }
@@ -221,7 +217,7 @@ class STPYHKManager: NSObject {
     /**
     Loads the step data since the date
     
-    :param: lastDate The last date to get data from
+    - parameter lastDate: The last date to get data from
     */
     func loadStepDataWithLastDataDate(lastDate : NSDate) {
         let date = NSDate()
@@ -238,14 +234,13 @@ class STPYHKManager: NSObject {
     /**
     Loads the step data for a specifc day
     
-    :param: start The start of the day
-    :param: end The end of the day
+    - parameter start: The start of the day
+    - parameter end: The end of the day
     */
     func loadStepDataForDay(start : NSDate,_ end : NSDate) {
         let key = start.key()
         let weekKey = start.beginningOfWeekKey()
         statsQuery(start, end, steps: true) { (result, error) -> Void in
-            let hack = self.stepCountData // Sometimes swift forgets when something is mutable. This fixes it. SUPER annoying.
             if let sumQuantity = result?.sumQuantity() {
                 let steps = Int(sumQuantity.doubleValueForUnit(HKUnit.countUnit()))
                 if self.stepCountData[weekKey] != nil {
@@ -265,9 +260,9 @@ class STPYHKManager: NSObject {
     /**
     Counts the steps for a set of week data
     
-    :param: data The week data
+    - parameter data: The week data
     
-    :returns: The number of steps
+    - returns: The number of steps
     */
     func getWeekStepsFromData(data : [String:Int]) -> Int {
         var steps = 0
@@ -281,7 +276,7 @@ class STPYHKManager: NSObject {
     Gets the total number of steps
     */
     func getTotalSteps(completion: ((Double!, NSError!) -> Void)!) {
-        statsQuery(NSDate.distantPast() as! NSDate, NSDate(), steps: true) { (result, error) -> Void in
+        statsQuery(NSDate.distantPast() , NSDate(), steps: true) { (result, error) -> Void in
             if let sumQuantity = result?.sumQuantity() {
                 completion(sumQuantity.doubleValueForUnit(HKUnit.countUnit()),nil)
             }
@@ -295,14 +290,14 @@ class STPYHKManager: NSObject {
     /**
     Generic stats query
     
-    :param: start The start date
-    :param: end The end date
-    :param: steps Bool if is step query
+    - parameter start: The start date
+    - parameter end: The end date
+    - parameter steps: Bool if is step query
     */
     func statsQuery(start : NSDate,_ end : NSDate, steps : Bool, completion: (result : HKStatistics!, error : NSError!) -> Void) {
         totalQueries++
         let quantityType = steps ? stepSampleType : distanceSampleType
-        let query = HKStatisticsQuery(quantityType: quantityType, quantitySamplePredicate: HKQuery.predicateForSamplesWithStartDate(start, endDate:end, options: .None), options: .CumulativeSum) { (query, result, error) -> Void in
+        let query = HKStatisticsQuery(quantityType: quantityType!, quantitySamplePredicate: HKQuery.predicateForSamplesWithStartDate(start, endDate:end, options: .None), options: .CumulativeSum) { (query, result, error) -> Void in
             completion(result: result, error: error)
         }
         hkStore.executeQuery(query)
@@ -311,12 +306,12 @@ class STPYHKManager: NSObject {
     /**
     Generic sample query
     
-    :param: steps Bool if is step query
+    - parameter steps: Bool if is step query
     */
     func lastDateQuery(steps : Bool, completion: (date : NSDate?) -> Void) {
         totalQueries++
         let quantityType = steps ? stepSampleType : distanceSampleType
-        let sampleQuery = HKSampleQuery(sampleType: quantityType, predicate: HKQuery.predicateForSamplesWithStartDate(NSDate.distantPast() as! NSDate, endDate:NSDate(), options: .None), limit: 1, sortDescriptors: [NSSortDescriptor(key:HKSampleSortIdentifierStartDate, ascending: true)]) { (sampleQuery : HKSampleQuery!, results : [AnyObject]?, error : NSError?) -> Void in
+        let sampleQuery = HKSampleQuery(sampleType: quantityType!, predicate: HKQuery.predicateForSamplesWithStartDate(NSDate.distantPast() as! NSDate, endDate:NSDate(), options: .None), limit: 1, sortDescriptors: [NSSortDescriptor(key:HKSampleSortIdentifierStartDate, ascending: true)]) { (sampleQuery : HKSampleQuery, results : [HKSample]?, error : NSError?) -> Void in
             if let results = results {
                 if let firstSample = results.first as? HKQuantitySample {
                     completion(date: firstSample.startDate.beginningOfWeek())
@@ -337,7 +332,7 @@ class STPYHKManager: NSObject {
     /**
     Builds the default data values and keys from a date
     
-    :param: lastDate The last date to build the data
+    - parameter lastDate: The last date to build the data
     */
     func buildDataStoreWithLastDataDate(lastDate : NSDate) {
         let date = NSDate()
@@ -345,12 +340,10 @@ class STPYHKManager: NSObject {
         var end = date
         while lastDate.timeIntervalSinceDate(start) <= 0 {
             let key = start.key()
-            let hack = stepCountData // Sometimes swift forgets when something is mutable. This fixes it. SUPER annoying.
             if stepCountData[key] == nil {
                 stepCountData[key] = [String:Int]()
             }
             buildDataStoreForWeekStart(start)
-            let hack1 = distanceData // Sometimes swift forgets when something is mutable. This fixes it. SUPER annoying.
             
             if distanceData[key] == nil {
                 distanceData[key] = 0.0
@@ -363,13 +356,11 @@ class STPYHKManager: NSObject {
     /**
     Builds the default data values and keys for a specific week
     
-    :param: lastDate The last date of the week
+    - parameter lastDate: The last date of the week
     */
     func buildDataStoreForWeekStart(lastDate : NSDate) {
         var date = lastDate
         for var day = 1; day < 8; day++ {
-            let hack = distanceDayData // Sometimes swift forgets when something is mutable. This fixes it. SUPER annoying.
-            let hack1 = stepCountData // Sometimes swift forgets when something is mutable. This fixes it. SUPER annoying.
             if distanceDayData[date.key()] == nil {
                 distanceDayData[date.key()] = 0.0
             }

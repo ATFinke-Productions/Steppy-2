@@ -145,7 +145,7 @@ class STPYGraphViewController: UIViewController, UIScrollViewDelegate, STPYHKMan
         let string = NSLocalizedString("Week Total Steps Title", comment: "")
         titleLabel.text = "\(STPYFormatter.sharedInstance.string(STPYHKManager.sharedInstance.totalSteps as NSNumber)) \(string)"
         
-        UIView.animateWithDuration(0.5, delay: 0.5, options: nil, animations: {
+        UIView.animateWithDuration(0.5, delay: 0.5, options: [], animations: {
             self.setAlphas([self.activityIndicator, self.loadingLabel], alpha: 0.0)
             }, completion: { Finished in
                 if !STPYDataHelper.key("Setup") {
@@ -194,7 +194,7 @@ class STPYGraphViewController: UIViewController, UIScrollViewDelegate, STPYHKMan
         
         for var week = 0; week < weeks; week++ {
             let graphView = STPYGraphView(frame: CGRectMake(mainScrollView.frame.width * CGFloat(week) + 5, 0, mainScrollView.frame.width - 10, mainScrollView.frame.height))
-            let key = Array(STPYHKManager.sharedInstance.stepCountData.keys).sorted(<)[week] as String
+            let key = Array(STPYHKManager.sharedInstance.stepCountData.keys).sort(<)[week] as String
             let value = STPYHKManager.sharedInstance.stepCountData[key]
             graphView.weekData = value!
             graphView.dayLabels = dayLabels
@@ -216,12 +216,12 @@ class STPYGraphViewController: UIViewController, UIScrollViewDelegate, STPYHKMan
             topScrollView.addSubview(summaryView)
             let graphView = graphViews[week]
             let steps = STPYHKManager.sharedInstance.getWeekStepsFromData(graphView.weekData)
-            let keys = Array(graphView.weekData.keys).sorted(<)
+            let keys = Array(graphView.weekData.keys).sort(<)
             let startDate = NSDate(key: keys[0])
             let endDate = NSDate(key: keys[keys.count - 1])
             summaryView.dateString = STPYFormatter.sharedInstance.string(startDate, endDate: endDate)
             summaryView.stepsString = STPYFormatter.sharedInstance.stringForSteps(steps as NSNumber)
-            let key = Array(STPYHKManager.sharedInstance.distanceData.keys).sorted(<)[week]
+            let key = Array(STPYHKManager.sharedInstance.distanceData.keys).sort(<)[week]
             summaryView.distanceString = STPYFormatter.sharedInstance.lengthFormatter.stringFromMeters(STPYHKManager.sharedInstance.distanceData[key]!)
             summaryView.loadLabels()
             summaryViews.append(summaryView)

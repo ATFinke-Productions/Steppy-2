@@ -8,49 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1401DDE91A695C0E00D4B369 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1401DDED1A695C0E00D4B369 /* Localizable.strings */; };
-		1401DDEB1A695C0E00D4B369 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1401DDED1A695C0E00D4B369 /* Localizable.strings */; };
-		140A934D1A69735000DF772F /* GraphInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140A934A1A69735000DF772F /* GraphInterface.storyboard */; };
-		140A934F1A69735000DF772F /* STPYGraphExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A934C1A69735000DF772F /* STPYGraphExtensionViewController.swift */; };
-		140A93511A69737100DF772F /* Graph.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 140A93501A69737100DF772F /* Graph.entitlements */; };
-		141A33081A8804AC00880119 /* STPYDateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA51A1A6888240055A522 /* STPYDateHelper.swift */; };
 		141A330A1A880DE000880119 /* STPYCMHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141A33091A880DE000880119 /* STPYCMHelper.swift */; };
-		141A330B1A880DE000880119 /* STPYCMHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141A33091A880DE000880119 /* STPYCMHelper.swift */; };
-		141A330C1A880DE000880119 /* STPYCMHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141A33091A880DE000880119 /* STPYCMHelper.swift */; };
-		144E20AA1A4CA876002CEDB5 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14ED9F871A4B91C0004CFB5F /* NotificationCenter.framework */; };
-		1465F0F81ACC720100A8E637 /* Steppy 2 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 147E495C1AA11F650037C395 /* Steppy 2 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		1465F0FC1ACC882600A8E637 /* STPYGlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1465F0FB1ACC882600A8E637 /* STPYGlanceController.swift */; };
-		146ADA291A69616B0056D187 /* StepCount.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 144E20A91A4CA876002CEDB5 /* StepCount.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		146ADA451A6965DC0056D187 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14ED9F871A4B91C0004CFB5F /* NotificationCenter.framework */; };
-		146ADA4F1A6965DC0056D187 /* Graph.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 146ADA441A6965DC0056D187 /* Graph.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		146ADA5C1A6967100056D187 /* STPYGraphBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA5161A6888240055A522 /* STPYGraphBar.swift */; };
-		146ADA5D1A6967100056D187 /* STPYGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA5171A6888240055A522 /* STPYGraphView.swift */; };
-		146ADA5E1A6967100056D187 /* STPYDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA5191A6888240055A522 /* STPYDataHelper.swift */; };
-		146ADA5F1A6967100056D187 /* STPYDateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA51A1A6888240055A522 /* STPYDateHelper.swift */; };
-		146ADA601A69683D0056D187 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1401DDED1A695C0E00D4B369 /* Localizable.strings */; };
-		147E49611AA11F650037C395 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E49601AA11F650037C395 /* InterfaceController.swift */; };
-		147E49631AA11F650037C395 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147E49621AA11F650037C395 /* Images.xcassets */; };
-		147E49671AA11F660037C395 /* Steppy 2 WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 147E49661AA11F660037C395 /* Steppy 2 WatchKit App.app */; };
-		147E496F1AA11F660037C395 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147E496D1AA11F660037C395 /* Interface.storyboard */; };
-		147E49711AA11F660037C395 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147E49701AA11F660037C395 /* Images.xcassets */; };
 		149690C61A855BD200410BEE /* STPYFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149690C51A855BD200410BEE /* STPYFormatter.swift */; };
-		149690C71A855BD200410BEE /* STPYFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149690C51A855BD200410BEE /* STPYFormatter.swift */; };
-		149690C81A855BD200410BEE /* STPYFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149690C51A855BD200410BEE /* STPYFormatter.swift */; };
 		14AAB9691A62D9C100F1DD1B /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AAB9681A62D9C100F1DD1B /* GameKit.framework */; };
-		14AD19A61A787ECE00E79FA2 /* STPYStepTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E2C6701A68A3BE00061BE4 /* STPYStepTableViewController.swift */; };
 		14C603BE1A47241900648CE3 /* STPYAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C603BD1A47241900648CE3 /* STPYAppDelegate.swift */; };
 		14C603C31A47241900648CE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C603C11A47241900648CE3 /* Main.storyboard */; };
 		14C603C51A47241A00648CE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C603C41A47241A00648CE3 /* Images.xcassets */; };
 		14C603C81A47241A00648CE3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14C603C61A47241A00648CE3 /* LaunchScreen.xib */; };
 		14C74C8B1A60329F00352C8F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C74C8A1A60329F00352C8F /* HealthKit.framework */; };
-		14D00B0B1AA13C5F00EE7562 /* STPYTableViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D00B0A1AA13C5F00EE7562 /* STPYTableViewCellController.swift */; };
-		14D00B0C1AA13D5700EE7562 /* STPYCMHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141A33091A880DE000880119 /* STPYCMHelper.swift */; };
-		14D00B0D1AA13D5D00EE7562 /* STPYFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149690C51A855BD200410BEE /* STPYFormatter.swift */; };
-		14D00B0E1AA13D7000EE7562 /* STPYDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA5191A6888240055A522 /* STPYDataHelper.swift */; };
-		14D00B0F1AA13D7300EE7562 /* STPYDateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA51A1A6888240055A522 /* STPYDateHelper.swift */; };
-		14D00B101AA1409900EE7562 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1401DDED1A695C0E00D4B369 /* Localizable.strings */; };
-		14D6E0291A61F6B8001749CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C603C41A47241A00648CE3 /* Images.xcassets */; };
-		14E2C67A1A68A3CE00061BE4 /* StepCount.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 14E2C66E1A68A3BE00061BE4 /* StepCount.entitlements */; };
-		14E2C67B1A68A3CE00061BE4 /* StepCountInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E2C66F1A68A3BE00061BE4 /* StepCountInterface.storyboard */; };
 		14EBA4F31A6887F30055A522 /* STPYNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA4F11A6887F30055A522 /* STPYNavigationBarView.swift */; };
 		14EBA4F41A6887F30055A522 /* STPYSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA4F21A6887F30055A522 /* STPYSummaryView.swift */; };
 		14EBA5041A6888030055A522 /* STPYColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA5011A6888030055A522 /* STPYColor.swift */; };
@@ -59,7 +24,6 @@
 		14EBA51C1A6888240055A522 /* STPYGraphBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA5161A6888240055A522 /* STPYGraphBar.swift */; };
 		14EBA51F1A6888240055A522 /* STPYGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA5171A6888240055A522 /* STPYGraphView.swift */; };
 		14EBA5221A6888240055A522 /* STPYDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA5191A6888240055A522 /* STPYDataHelper.swift */; };
-		14EBA5241A6888240055A522 /* STPYDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA5191A6888240055A522 /* STPYDataHelper.swift */; };
 		14EBA5251A6888240055A522 /* STPYDateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA51A1A6888240055A522 /* STPYDateHelper.swift */; };
 		14EBA5331A68889B0055A522 /* STPYAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA52E1A68889B0055A522 /* STPYAboutViewController.swift */; };
 		14EBA5341A68889B0055A522 /* STPYLeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA52F1A68889B0055A522 /* STPYLeaderboardViewController.swift */; };
@@ -68,37 +32,6 @@
 		14EBA5371A68889B0055A522 /* STPYGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA5321A68889B0055A522 /* STPYGraphViewController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		1465F0F91ACC720100A8E637 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 14C603B01A47241900648CE3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 147E495B1AA11F650037C395;
-			remoteInfo = "Steppy 2 WatchKit Extension";
-		};
-		146ADA2A1A69616B0056D187 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 14C603B01A47241900648CE3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 144E20A81A4CA876002CEDB5;
-			remoteInfo = StepCount;
-		};
-		146ADA4D1A6965DC0056D187 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 14C603B01A47241900648CE3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 146ADA431A6965DC0056D187;
-			remoteInfo = GraphView;
-		};
-		147E49681AA11F660037C395 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 14C603B01A47241900648CE3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 147E49651AA11F660037C395;
-			remoteInfo = "Steppy 2 WatchKit App";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		146ADA2C1A69616C0056D187 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -106,9 +39,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				146ADA4F1A6965DC0056D187 /* Graph.appex in Embed App Extensions */,
-				1465F0F81ACC720100A8E637 /* Steppy 2 WatchKit Extension.appex in Embed App Extensions */,
-				146ADA291A69616B0056D187 /* StepCount.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,27 +48,11 @@
 /* Begin PBXFileReference section */
 		1401DDEC1A695C0E00D4B369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1401DDEE1A695C1100D4B369 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		140A934A1A69735000DF772F /* GraphInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GraphInterface.storyboard; sourceTree = "<group>"; };
-		140A934B1A69735000DF772F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		140A934C1A69735000DF772F /* STPYGraphExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STPYGraphExtensionViewController.swift; sourceTree = "<group>"; };
-		140A93501A69737100DF772F /* Graph.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Graph.entitlements; sourceTree = "<group>"; };
 		141991BC1A82C22A005CCD85 /* cy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cy; path = cy.lproj/Localizable.strings; sourceTree = "<group>"; };
 		141A33091A880DE000880119 /* STPYCMHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STPYCMHelper.swift; sourceTree = "<group>"; };
 		141DC7621A791A42004047E1 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
-		144E20A91A4CA876002CEDB5 /* StepCount.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StepCount.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1462C1221A4CEF4D0032B8A8 /* SwiftSteppy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SwiftSteppy.entitlements; sourceTree = "<group>"; };
-		1465F0FB1ACC882600A8E637 /* STPYGlanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STPYGlanceController.swift; sourceTree = "<group>"; };
-		1465F0FD1ACC915100A8E637 /* Steppy 2 WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Steppy 2 WatchKit Extension.entitlements"; sourceTree = "<group>"; };
-		146ADA441A6965DC0056D187 /* Graph.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Graph.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		14786C221A8BB12000540231 /* MutabilityCrashes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MutabilityCrashes.txt; sourceTree = "<group>"; };
-		147E495C1AA11F650037C395 /* Steppy 2 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Steppy 2 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		147E495F1AA11F650037C395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		147E49601AA11F650037C395 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		147E49621AA11F650037C395 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		147E49661AA11F660037C395 /* Steppy 2 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Steppy 2 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		147E496C1AA11F660037C395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		147E496E1AA11F660037C395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		147E49701AA11F660037C395 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		14874B561A740DE000EF344E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		14874B571A740DE800EF344E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		14874B581A740DF200EF344E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -154,11 +68,6 @@
 		14C603C41A47241A00648CE3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		14C603C71A47241A00648CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		14C74C8A1A60329F00352C8F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		14D00B0A1AA13C5F00EE7562 /* STPYTableViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STPYTableViewCellController.swift; sourceTree = "<group>"; };
-		14E2C66D1A68A3BE00061BE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14E2C66E1A68A3BE00061BE4 /* StepCount.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = StepCount.entitlements; sourceTree = "<group>"; };
-		14E2C66F1A68A3BE00061BE4 /* StepCountInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StepCountInterface.storyboard; sourceTree = "<group>"; };
-		14E2C6701A68A3BE00061BE4 /* STPYStepTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STPYStepTableViewController.swift; sourceTree = "<group>"; };
 		14EBA4F11A6887F30055A522 /* STPYNavigationBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STPYNavigationBarView.swift; sourceTree = "<group>"; };
 		14EBA4F21A6887F30055A522 /* STPYSummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STPYSummaryView.swift; sourceTree = "<group>"; };
 		14EBA5011A6888030055A522 /* STPYColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STPYColor.swift; sourceTree = "<group>"; };
@@ -177,29 +86,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		144E20A61A4CA876002CEDB5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				144E20AA1A4CA876002CEDB5 /* NotificationCenter.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		146ADA411A6965DC0056D187 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				146ADA451A6965DC0056D187 /* NotificationCenter.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		147E49591AA11F650037C395 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		14C603B51A47241900648CE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,64 +98,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		140A93491A69735000DF772F /* Graph */ = {
-			isa = PBXGroup;
-			children = (
-				140A934B1A69735000DF772F /* Info.plist */,
-				140A93501A69737100DF772F /* Graph.entitlements */,
-				140A934A1A69735000DF772F /* GraphInterface.storyboard */,
-				140A934C1A69735000DF772F /* STPYGraphExtensionViewController.swift */,
-			);
-			path = Graph;
-			sourceTree = "<group>";
-		};
-		147E495D1AA11F650037C395 /* Steppy 2 WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				1465F0FD1ACC915100A8E637 /* Steppy 2 WatchKit Extension.entitlements */,
-				147E49601AA11F650037C395 /* InterfaceController.swift */,
-				1465F0FB1ACC882600A8E637 /* STPYGlanceController.swift */,
-				14D00B0A1AA13C5F00EE7562 /* STPYTableViewCellController.swift */,
-				147E49621AA11F650037C395 /* Images.xcassets */,
-				147E495E1AA11F650037C395 /* Supporting Files */,
-			);
-			path = "Steppy 2 WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		147E495E1AA11F650037C395 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				147E495F1AA11F650037C395 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		147E496A1AA11F660037C395 /* Steppy 2 WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				147E496D1AA11F660037C395 /* Interface.storyboard */,
-				147E49701AA11F660037C395 /* Images.xcassets */,
-				147E496B1AA11F660037C395 /* Supporting Files */,
-			);
-			path = "Steppy 2 WatchKit App";
-			sourceTree = "<group>";
-		};
-		147E496B1AA11F660037C395 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				147E496C1AA11F660037C395 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		14C603AF1A47241900648CE3 = {
 			isa = PBXGroup;
 			children = (
 				14C603BA1A47241900648CE3 /* Host App */,
 				14EBA5141A6888240055A522 /* Shared */,
-				14E2C6661A68A3BE00061BE4 /* Extensions */,
-				147E495D1AA11F650037C395 /* Steppy 2 WatchKit Extension */,
-				147E496A1AA11F660037C395 /* Steppy 2 WatchKit App */,
 				14ED9F861A4B91C0004CFB5F /* Frameworks */,
 				14C603B91A47241900648CE3 /* Products */,
 			);
@@ -279,10 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				14C603B81A47241900648CE3 /* SwiftSteppy.app */,
-				144E20A91A4CA876002CEDB5 /* StepCount.appex */,
-				146ADA441A6965DC0056D187 /* Graph.appex */,
-				147E495C1AA11F650037C395 /* Steppy 2 WatchKit Extension.appex */,
-				147E49661AA11F660037C395 /* Steppy 2 WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -319,26 +148,6 @@
 				14C603C41A47241A00648CE3 /* Images.xcassets */,
 			);
 			name = Interface;
-			sourceTree = "<group>";
-		};
-		14E2C6661A68A3BE00061BE4 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				140A93491A69735000DF772F /* Graph */,
-				14E2C66C1A68A3BE00061BE4 /* StepCount */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		14E2C66C1A68A3BE00061BE4 /* StepCount */ = {
-			isa = PBXGroup;
-			children = (
-				14E2C66D1A68A3BE00061BE4 /* Info.plist */,
-				14E2C66E1A68A3BE00061BE4 /* StepCount.entitlements */,
-				14E2C66F1A68A3BE00061BE4 /* StepCountInterface.storyboard */,
-				14E2C6701A68A3BE00061BE4 /* STPYStepTableViewController.swift */,
-			);
-			path = StepCount;
 			sourceTree = "<group>";
 		};
 		14EBA4F01A6887F30055A522 /* Views */ = {
@@ -423,73 +232,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		144E20A81A4CA876002CEDB5 /* StepCount */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 144E20B71A4CA877002CEDB5 /* Build configuration list for PBXNativeTarget "StepCount" */;
-			buildPhases = (
-				144E20A51A4CA876002CEDB5 /* Sources */,
-				144E20A61A4CA876002CEDB5 /* Frameworks */,
-				144E20A71A4CA876002CEDB5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = StepCount;
-			productName = StepCount;
-			productReference = 144E20A91A4CA876002CEDB5 /* StepCount.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		146ADA431A6965DC0056D187 /* GraphView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 146ADA501A6965DC0056D187 /* Build configuration list for PBXNativeTarget "GraphView" */;
-			buildPhases = (
-				146ADA401A6965DC0056D187 /* Sources */,
-				146ADA411A6965DC0056D187 /* Frameworks */,
-				146ADA421A6965DC0056D187 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GraphView;
-			productName = GraphView;
-			productReference = 146ADA441A6965DC0056D187 /* Graph.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		147E495B1AA11F650037C395 /* Steppy 2 WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 147E49781AA11F660037C395 /* Build configuration list for PBXNativeTarget "Steppy 2 WatchKit Extension" */;
-			buildPhases = (
-				147E49581AA11F650037C395 /* Sources */,
-				147E49591AA11F650037C395 /* Frameworks */,
-				147E495A1AA11F650037C395 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				147E49691AA11F660037C395 /* PBXTargetDependency */,
-			);
-			name = "Steppy 2 WatchKit Extension";
-			productName = "Steppy 2 WatchKit Extension";
-			productReference = 147E495C1AA11F650037C395 /* Steppy 2 WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
-		};
-		147E49651AA11F660037C395 /* Steppy 2 WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 147E49751AA11F660037C395 /* Build configuration list for PBXNativeTarget "Steppy 2 WatchKit App" */;
-			buildPhases = (
-				147E49641AA11F660037C395 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Steppy 2 WatchKit App";
-			productName = "Steppy 2 WatchKit App";
-			productReference = 147E49661AA11F660037C395 /* Steppy 2 WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp";
-		};
 		14C603B71A47241900648CE3 /* SwiftSteppy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14C603D71A47241A00648CE3 /* Build configuration list for PBXNativeTarget "SwiftSteppy" */;
@@ -502,9 +244,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				146ADA2B1A69616B0056D187 /* PBXTargetDependency */,
-				146ADA4E1A6965DC0056D187 /* PBXTargetDependency */,
-				1465F0FA1ACC720100A8E637 /* PBXTargetDependency */,
 			);
 			name = SwiftSteppy;
 			productName = SwiftSteppy;
@@ -518,43 +257,14 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = STPY;
-				LastUpgradeCheck = 0610;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Andrew Finke";
 				TargetAttributes = {
-					144E20A81A4CA876002CEDB5 = {
-						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = V7H4B3C39A;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					146ADA431A6965DC0056D187 = {
-						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = V7H4B3C39A;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					147E495B1AA11F650037C395 = {
-						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = V7H4B3C39A;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					147E49651AA11F660037C395 = {
-						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = V7H4B3C39A;
-					};
 					14C603B71A47241900648CE3 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = V7H4B3C39A;
+						DevelopmentTeam = 72S993BNAV;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -594,55 +304,11 @@
 			projectRoot = "";
 			targets = (
 				14C603B71A47241900648CE3 /* SwiftSteppy */,
-				144E20A81A4CA876002CEDB5 /* StepCount */,
-				146ADA431A6965DC0056D187 /* GraphView */,
-				147E495B1AA11F650037C395 /* Steppy 2 WatchKit Extension */,
-				147E49651AA11F660037C395 /* Steppy 2 WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		144E20A71A4CA876002CEDB5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14D6E0291A61F6B8001749CA /* Images.xcassets in Resources */,
-				14E2C67A1A68A3CE00061BE4 /* StepCount.entitlements in Resources */,
-				14E2C67B1A68A3CE00061BE4 /* StepCountInterface.storyboard in Resources */,
-				1401DDEB1A695C0E00D4B369 /* Localizable.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		146ADA421A6965DC0056D187 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				140A934D1A69735000DF772F /* GraphInterface.storyboard in Resources */,
-				140A93511A69737100DF772F /* Graph.entitlements in Resources */,
-				146ADA601A69683D0056D187 /* Localizable.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		147E495A1AA11F650037C395 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				147E49631AA11F650037C395 /* Images.xcassets in Resources */,
-				14D00B101AA1409900EE7562 /* Localizable.strings in Resources */,
-				147E49671AA11F660037C395 /* Steppy 2 WatchKit App.app in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		147E49641AA11F660037C395 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				147E496F1AA11F660037C395 /* Interface.storyboard in Resources */,
-				147E49711AA11F660037C395 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		14C603B61A47241900648CE3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -657,46 +323,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		144E20A51A4CA876002CEDB5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				141A33081A8804AC00880119 /* STPYDateHelper.swift in Sources */,
-				14AD19A61A787ECE00E79FA2 /* STPYStepTableViewController.swift in Sources */,
-				14EBA5241A6888240055A522 /* STPYDataHelper.swift in Sources */,
-				149690C71A855BD200410BEE /* STPYFormatter.swift in Sources */,
-				141A330B1A880DE000880119 /* STPYCMHelper.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		146ADA401A6965DC0056D187 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				146ADA5C1A6967100056D187 /* STPYGraphBar.swift in Sources */,
-				140A934F1A69735000DF772F /* STPYGraphExtensionViewController.swift in Sources */,
-				149690C81A855BD200410BEE /* STPYFormatter.swift in Sources */,
-				146ADA5D1A6967100056D187 /* STPYGraphView.swift in Sources */,
-				141A330C1A880DE000880119 /* STPYCMHelper.swift in Sources */,
-				146ADA5E1A6967100056D187 /* STPYDataHelper.swift in Sources */,
-				146ADA5F1A6967100056D187 /* STPYDateHelper.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		147E49581AA11F650037C395 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				147E49611AA11F650037C395 /* InterfaceController.swift in Sources */,
-				14D00B0B1AA13C5F00EE7562 /* STPYTableViewCellController.swift in Sources */,
-				14D00B0E1AA13D7000EE7562 /* STPYDataHelper.swift in Sources */,
-				1465F0FC1ACC882600A8E637 /* STPYGlanceController.swift in Sources */,
-				14D00B0D1AA13D5D00EE7562 /* STPYFormatter.swift in Sources */,
-				14D00B0C1AA13D5700EE7562 /* STPYCMHelper.swift in Sources */,
-				14D00B0F1AA13D7300EE7562 /* STPYDateHelper.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		14C603B41A47241900648CE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -723,29 +349,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		1465F0FA1ACC720100A8E637 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 147E495B1AA11F650037C395 /* Steppy 2 WatchKit Extension */;
-			targetProxy = 1465F0F91ACC720100A8E637 /* PBXContainerItemProxy */;
-		};
-		146ADA2B1A69616B0056D187 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 144E20A81A4CA876002CEDB5 /* StepCount */;
-			targetProxy = 146ADA2A1A69616B0056D187 /* PBXContainerItemProxy */;
-		};
-		146ADA4E1A6965DC0056D187 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 146ADA431A6965DC0056D187 /* GraphView */;
-			targetProxy = 146ADA4D1A6965DC0056D187 /* PBXContainerItemProxy */;
-		};
-		147E49691AA11F660037C395 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 147E49651AA11F660037C395 /* Steppy 2 WatchKit App */;
-			targetProxy = 147E49681AA11F660037C395 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		1401DDED1A695C0E00D4B369 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -762,14 +365,6 @@
 				141991BC1A82C22A005CCD85 /* cy */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		147E496D1AA11F660037C395 /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				147E496E1AA11F660037C395 /* Base */,
-			);
-			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 		14C603C11A47241900648CE3 /* Main.storyboard */ = {
@@ -791,150 +386,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		144E20B51A4CA877002CEDB5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Extensions/StepCount/StepCount.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Extensions/StepCount/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				OTHER_SWIFT_FLAGS = "-DEXTENSION";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		144E20B61A4CA877002CEDB5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Extensions/StepCount/StepCount.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/Extensions/StepCount/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				OTHER_SWIFT_FLAGS = "-DEXTENSION";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		146ADA511A6965DC0056D187 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Extensions/Graph/Graph.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Extensions/Graph/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				OTHER_SWIFT_FLAGS = "-DEXTENSION";
-				PRODUCT_NAME = Graph;
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		146ADA521A6965DC0056D187 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Extensions/Graph/Graph.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				INFOPLIST_FILE = "$(SRCROOT)/Extensions/Graph/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				OTHER_SWIFT_FLAGS = "-DEXTENSION";
-				PRODUCT_NAME = Graph;
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		147E49761AA11F660037C395 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				IBSC_MODULE = Steppy_2_WatchKit_Extension;
-				INFOPLIST_FILE = "Steppy 2 WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
-			};
-			name = Debug;
-		};
-		147E49771AA11F660037C395 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				COPY_PHASE_STRIP = NO;
-				IBSC_MODULE = Steppy_2_WatchKit_Extension;
-				INFOPLIST_FILE = "Steppy 2 WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
-			};
-			name = Release;
-		};
-		147E49791AA11F660037C395 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Steppy 2 WatchKit Extension/Steppy 2 WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Steppy 2 WatchKit Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		147E497A1AA11F660037C395 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Steppy 2 WatchKit Extension/Steppy 2 WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = "Steppy 2 WatchKit Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		14C603D51A47241A00648CE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1019,8 +470,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftSteppy/SwiftSteppy.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1041,8 +492,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftSteppy/SwiftSteppy.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1061,42 +512,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		144E20B71A4CA877002CEDB5 /* Build configuration list for PBXNativeTarget "StepCount" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				144E20B51A4CA877002CEDB5 /* Debug */,
-				144E20B61A4CA877002CEDB5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		146ADA501A6965DC0056D187 /* Build configuration list for PBXNativeTarget "GraphView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				146ADA511A6965DC0056D187 /* Debug */,
-				146ADA521A6965DC0056D187 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		147E49751AA11F660037C395 /* Build configuration list for PBXNativeTarget "Steppy 2 WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				147E49761AA11F660037C395 /* Debug */,
-				147E49771AA11F660037C395 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		147E49781AA11F660037C395 /* Build configuration list for PBXNativeTarget "Steppy 2 WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				147E49791AA11F660037C395 /* Debug */,
-				147E497A1AA11F660037C395 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		14C603B31A47241900648CE3 /* Build configuration list for PBXProject "SwiftSteppy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

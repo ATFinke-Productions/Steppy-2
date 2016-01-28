@@ -35,10 +35,10 @@ class STPYFormatter {
     /**
     Gets the date from a string with date format
     
-    :param: key The date string
-    :param: format The date format
+    - parameter key: The date string
+    - parameter format: The date format
     
-    :returns: The date
+    - returns: The date
     */
     func date(key : String, format : String) -> NSDate {
         dateFormatter.dateFormat = format
@@ -50,10 +50,10 @@ class STPYFormatter {
     /**
     Gets the formatted string from a date with date format
     
-    :param: date The date
-    :param: format The date format
+    - parameter date: The date
+    - parameter format: The date format
     
-    :returns: The formatted string
+    - returns: The formatted string
     */
     func string(date : NSDate, format : String) -> String {
         dateFormatter.dateFormat = format
@@ -63,10 +63,10 @@ class STPYFormatter {
     /**
     Gets the formatted string for the interval between dates
     
-    :param: startDate The start date
-    :param: end The end date
+    - parameter startDate: The start date
+    - parameter end: The end date
     
-    :returns: The formatted string
+    - returns: The formatted string
     */
     func string(startDate : NSDate, endDate : NSDate) -> String {
         return dateIntervalFormatter.stringFromDate(startDate, toDate: endDate)
@@ -75,9 +75,9 @@ class STPYFormatter {
     /**
     Gets the formatted string for a number
     
-    :param: number The number
+    - parameter number: The number
     
-    :returns: The formatted string
+    - returns: The formatted string
     */
     func string(number : NSNumber) -> String {
         return numberFormatter.stringFromNumber(number)!
@@ -86,9 +86,9 @@ class STPYFormatter {
     /**
     Gets the formatted step count string for a step count number
     
-    :param: number The step count number
+    - parameter number: The step count number
     
-    :returns: The formatted string
+    - returns: The formatted string
     */
     func stringForSteps(number : NSNumber) -> String {
         return String(format: NSLocalizedString("Shared Steps Title", comment: ""), string(number))
@@ -97,9 +97,9 @@ class STPYFormatter {
     /**
     Gets the formatted distance string
     
-    :param: number The distance in meters
+    - parameter number: The distance in meters
     
-    :returns: The formatted string
+    - returns: The formatted string
     */
     func stringForMeters(number : Double) -> String {
         return lengthFormatter.stringFromMeters(number)
@@ -108,9 +108,9 @@ class STPYFormatter {
     /**
     Gets the formatted percent string for a number
     
-    :param: number The number
+    - parameter number: The number
     
-    :returns: The formatted percent string
+    - returns: The formatted percent string
     */
     func percentString(number : NSNumber) -> String {
         return percentFormatter.stringFromNumber(number)!

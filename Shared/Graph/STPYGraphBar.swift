@@ -19,7 +19,7 @@ class STPYGraphBar: UIView {
     /**
     Sets the bar's filled view progress towards full height
     
-    :param: progress The bar progress
+    - parameter progress: The bar progress
     */
     func setProgress(progress : CGFloat) {
         if self.frame.height > 0 && maxHeight == CGFloat(0) {
@@ -40,7 +40,7 @@ class STPYGraphBar: UIView {
     /**
     Sets the bar's filled view progress towards full height while making sure the frame is laid out
     
-    :param: timer The timer checking if view laid out
+    - parameter timer: The timer checking if view laid out
     */
     func setProgressLater(timer : NSTimer) {
         if self.frame.height > 0 {
@@ -65,7 +65,7 @@ class STPYGraphBar: UIView {
         addSubview(filledView)
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         NSNotificationCenter.defaultCenter().postNotificationName("BarTapped", object: dateKey)
     }
 }

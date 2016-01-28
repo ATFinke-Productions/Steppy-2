@@ -13,12 +13,12 @@ class STPYDateHelper: NSObject {
     /**
     Gets the day abbreviations for the week
     
-    :returns: The array of abbreviations
+    - returns: The array of abbreviations
     */
     class func dayAbbreviations() -> [String] {
         let calendar = NSCalendar.currentCalendar()
         calendar.timeZone = NSTimeZone.systemTimeZone()
-        var comps = NSDateComponents()
+        let comps = NSDateComponents()
         comps.day = 21
         comps.month = 12
         comps.year = 2014
@@ -37,7 +37,7 @@ extension NSDate {
     /**
     Gets the next days date
     
-    :returns: The date
+    - returns: The date
     */
     func nextDay() -> NSDate {
         return dateByAddingTimeInterval(86400)
@@ -46,7 +46,7 @@ extension NSDate {
     /**
     Gets the last date of the previous day
     
-    :returns: The date
+    - returns: The date
     */
     func endOfPreviousDay() -> NSDate {
         return dateByAddingTimeInterval(-1)
@@ -55,12 +55,12 @@ extension NSDate {
     /**
     Gets the date for the beginning of the day
     
-    :returns: The date
+    - returns: The date
     */
     func beginningOfDay() -> NSDate {
         let calendar = NSCalendar.currentCalendar()
         calendar.timeZone = NSTimeZone.systemTimeZone()
-        var dateComps = calendar.components(.CalendarUnitYear | .CalendarUnitMonth | .CalendarUnitDay, fromDate: self)
+        let dateComps = calendar.components([.Year, .Month, .Day], fromDate: self)
         dateComps.hour = 0
         dateComps.minute = 0
         dateComps.second = 0
@@ -70,14 +70,14 @@ extension NSDate {
     /**
     Gets the date for the beginning of the week
     
-    :returns: The date
+    - returns: The date
     */
     func beginningOfWeek() -> NSDate {
         let calendar = NSCalendar.currentCalendar()
         calendar.timeZone = NSTimeZone.systemTimeZone()
         var date : NSDate?
         var interval : NSTimeInterval = 0
-        calendar.rangeOfUnit(.CalendarUnitWeekOfYear, startDate: &date, interval: &interval, forDate: self)
+        calendar.rangeOfUnit(.WeekOfYear, startDate: &date, interval: &interval, forDate: self)
         if let date = date {
             return date.beginningOfDay()
         }
@@ -87,7 +87,7 @@ extension NSDate {
     /**
     Gets the key for the beginning of the week
     
-    :returns: The key
+    - returns: The key
     */
     func beginningOfWeekKey() -> String {
         return beginningOfWeek().key()
@@ -96,7 +96,7 @@ extension NSDate {
     /**
     Gets a Steppy date key for the date
     
-    :returns: The key
+    - returns: The key
     */
     func key() -> String {
         return STPYFormatter.sharedInstance.string(self, format: "yyyy-MM-dd")
@@ -105,7 +105,7 @@ extension NSDate {
     /**
     Creates new NSDate instance from the Steppy date key
     
-    :param: key The Steppy date key
+    - parameter key: The Steppy date key
     */
     convenience init(key : String) {
         self.init(timeInterval:0, sinceDate:STPYFormatter.sharedInstance.date(key, format: "yyyy-MM-dd"))
